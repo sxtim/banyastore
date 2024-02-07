@@ -1,10 +1,35 @@
 .header {
-	background-color: var(--black-dark);
-	padding: 50px 0;
+  background-color: var(--black-dark);
+}
 
-	&__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__contacts {
+  display: flex;
+  align-items: center;
+
+  & li {
+    &:not(:last-child) {
+      display: flex;
+      margin-right: 20px;
+
+      & img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.shop__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop__nav-item {
+  height: 96px;
 }
