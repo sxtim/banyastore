@@ -11,11 +11,12 @@
 .header__contacts {
   display: flex;
   align-items: center;
+  font-weight: 500;
 
   & li {
     &:not(:last-child) {
       display: flex;
-      margin-right: 20px;
+      margin-right: 80px;
 
       & img {
         margin-right: 10px;
@@ -24,12 +25,33 @@
   }
 }
 
-.shop__nav-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.phone {
+  color: var(--white);
+  line-height: 140%;
+
+  & p {
+    font-size: 18px;
+    color: var(--green);
+    text-decoration: underline;
+  }
 }
 
-.shop__nav-item {
-  height: 96px;
+.header__shop-nav {
+  display: flex;
 }
+
+.shop-nav__item {
+  display: flex;
+  align-items: center;
+
+  & svg {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-right: 2px;
+  }
+}
+
+
