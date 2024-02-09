@@ -6,19 +6,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
 }
 
 .header__contacts {
   display: flex;
   align-items: center;
-  font-weight: 500;
+  justify-content: space-between;
+  gap: 15px;
+  width: 700px;
+  margin: 0 15px;
 
   li {
     &:not(:last-child) {
       display: flex;
-      margin-right: 80px;
+      //margin-right: 80px;
 
-       img {
+      img {
         margin-right: 10px;
       }
     }
@@ -34,6 +38,10 @@
     color: var(--green);
     text-decoration: underline;
     text-underline-offset: 4px;
+    transition: .3s ease-in-out;
+    &:hover {
+      color: var(--white);
+    }
   }
 }
 
@@ -45,7 +53,8 @@
   display: flex;
   align-items: center;
 
-   svg {
+
+  svg {
     display: flex;
     align-items: center;
   }
@@ -54,18 +63,29 @@
     margin-right: 2px;
   }
 
-  :hover {
-    fill: #cccccc;
-    opacity: 70%;
+  svg #profile,
+  svg rect{
+    transition-property: all;
+    transition: .3s ease-in-out;
+    fill: var(--gray-dark);
   }
-}
 
-.shop-info__favorites-link {
-  position: relative;
-}
+  :hover svg #profile,
+  :hover svg rect {
+    fill: var(--green-dark);
+    transition: .3s;
+  }
 
-.shop-info__cart-link {
-  position: relative;
+  span {
+    background-color: var(--green-dark);
+    transition: .3s;
+  }
+
+  :hover span {
+    background-color: var(--gray-dark);
+    transition: .3s;
+  }
+
 }
 
 .quantity {
@@ -79,6 +99,22 @@
   background-color: var(--green-dark);
   border-radius: 20px;
 }
+
+.shop-info__favorites-link {
+  position: relative;
+}
+
+.shop-info__cart-link {
+  position: relative;
+}
+
+.header__bottom {
+  background-color: var(--black);
+  width: 500px;
+  height: 500px;
+}
+
+
 
 
 
