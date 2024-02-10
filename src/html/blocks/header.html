@@ -15,9 +15,9 @@
             <span>Заказать звонок</span></a>
         </li>
       </ul>
-      <ul class="header__shop-info shop-info">
-        <li class="shop-info__item">
-          <button class="shop-nav__profile-btn">
+      <ul class="header__shop-menu shop-menu">
+        <li class="shop-menu__item">
+          <button class="shop-menu__profile-btn">
             <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path id="profile" d="M0 0H96V96H0V0Z" fill="#3B3B3B"/>
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,8 +32,8 @@
             </svg>
           </button>
         </li>
-        <li class="shop-info__item">
-          <a href="#!" class="shop-info__favorites-link">
+        <li class="shop-menu__item">
+          <a href="#!" class="shop-menu__favorites-link">
             <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="96" height="96" fill="#3B3B3B"/>
               <path
@@ -43,8 +43,8 @@
             <span class="shop-info__favorites-quantity quantity">12</span>
           </a>
         </li>
-        <li class="shop-info__item">
-          <a href="!#" class="shop-info__cart-link">
+        <li class="shop-menu__item">
+          <a href="!#" class="shop-menu__cart-link">
             <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="96" height="96" fill="#3B3B3B"/>
               <path
@@ -66,9 +66,9 @@
   <div class="header__bottom">
     <div class="container">
       <div class="header__bottom-inner">
-        <nav class="header__catalog catalog-menu">
-          <ul class="catalog-menu__list">
-            <li class="catalog-menu__title"><a href="#!">
+        <nav class="header__dropdown-menu dropdown-menu">
+          <ul class="dropdown-menu__list">
+            <li class="dropdown-menu__title"><a href="#!">
               <img src="./img/icons/catalog-burger.svg" alt="cat">
               <span>Каталог товаров</span></a>
               <!--          <ul>-->
@@ -133,9 +133,7 @@
           </a></li>
         </ul>
         <form action="" class="header__search-form search-form">
-          <button type="submit" class="search__form-btn">
-<!--            <img src="./img/icons/search.svg" alt="search">-->
-          </button>
+          <button type="submit" class="search__form-btn"></button>
           <input type="text" class="search-form-txt" placeholder="Поиск по каталогу">
         </form>
       </div>
