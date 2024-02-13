@@ -1,1 +1,1 @@
-!function(){"use strict";!function(){const o=document.querySelector(".mobile-nav-btn"),n=document.querySelector(".mobile-nav"),e=document.querySelector(".nav-icon");o.onclick=function(){console.log("ghbdtn"),n.classList.toggle("mobile-nav--open"),e.classList.toggle("nav-icon--active"),document.body.classList.toggle("no-scroll")}}()}();
+!function(){"use strict";console.log(10)}();
