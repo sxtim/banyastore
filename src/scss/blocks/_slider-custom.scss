@@ -1,5 +1,5 @@
 .top-slider {
-  width: 500px;
+  width: 100vw;
   overflow: hidden;
   position: relative;
 }
@@ -10,7 +10,8 @@
 }
 
 .top-slider__img {
-  width: 500px;
+  width: 2440px;
+  object-fit: cover;
 }
 
 .slider__btn-prev{
