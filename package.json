@@ -35,5 +35,9 @@
 	},
 	"browserslist": [
 		"last 5 versions"
-	]
+	],
+	"dependencies": {
+		"keen-slider": "^6.8.6",
+		"swiper": "^11.0.6"
+	}
 }
