@@ -1,10 +1,19 @@
+.top {
+  margin: 0;
+  padding: 0;
+}
+
 .keen-slider__slide {
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: center;
   width: 100dvw;
-  //max-height: 700px;
-  //max-height: 100vh;
+  height: auto;
+  img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+  }
 }
 
 .keen-slider__wrapper{
