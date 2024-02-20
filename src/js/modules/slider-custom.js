@@ -25,7 +25,7 @@ sliderBtnPrev.addEventListener('click', prevSlide);
 // Функции ==================
 // Задает нужную ширину картинки и sliderLine
 function showSlide() {
-    sliderWidth = document.querySelector('.slider').offsetWidth;
+    sliderWidth = document.querySelector('.brands__carousel').offsetWidth;
     sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
     sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
 
