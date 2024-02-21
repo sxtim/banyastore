@@ -1,0 +1,40 @@
+.btn {
+  max-width: 200px;
+  padding: 10px 25px;
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+.btn-box-special {
+  background: #383b3a;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-medium {
+  background: var(--green-dark);
+  color: var(--white);
+  border-radius: 5px;
+  //box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
+  //box-shadow: 0 3px var(--green);
+  //transition: transform 1ms;
+  transition: 200ms;
+}
+
+.btn-medium:hover {
+  background: var(--green);
+  box-shadow: 0 0px 0px #777777, inset 0 0 10px #777777;
+  transition: 200ms;
+}
+
+.btn-medium:active {
+  //transition: 1ms;
+  transform: translateY(1px);
+  //transform: scale(0.98);
+}
