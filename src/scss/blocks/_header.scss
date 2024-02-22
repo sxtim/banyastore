@@ -55,6 +55,8 @@
 .shop-menu__item {
   display: flex;
   align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
 
 
   svg {
@@ -122,39 +124,8 @@
   padding: 10px 0;
 }
 
-.dropdown-menu__list {
-  padding: 8px 13px;
-  border: 1px solid var(--green-dark);
-  border-radius: 5px;
-  transition-property: all;
-  transition: .3s ease-in-out;
-
-  &:hover {
-    background-color: var(--green-dark);
-  }
-
-}
-
-.dropdown-menu__title {
-  a {
-    color: var(--white);
-    display: flex;
-  }
-
-  img {
-    margin-right: 14px;
-  }
-
-  span {
-    font-size: var(--base-font-size);
-  }
-}
-
-.nav {
-  width: 465px;
-}
-
 .header__nav {
+  width: 465px;
   margin: 0 40px;
 }
 
