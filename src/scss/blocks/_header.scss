@@ -50,14 +50,22 @@
 
 .header__shop-menu {
   display: flex;
+  margin: 5px 0;
 }
 
 .shop-menu__item {
+
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  //border-radius: 5px;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px #777777, inset 0 0 0px #777777;
 
+  &:active {
+    box-shadow: 0 0px 0px #777777, inset 0 0 10px #777777;
+    transform: scale(0.99);
+  }
 
   svg {
     display: flex;
@@ -65,30 +73,30 @@
   }
 
   &:not(:last-child) {
-    margin-right: 2px;
+    margin-right: 8px;
   }
 
   svg #profile,
   svg rect {
     transition-property: all;
-    transition: .3s ease-in-out;
+    transition: .1s ease-in-out;
     fill: var(--gray-dark);
   }
 
   :hover svg #profile,
   :hover svg rect {
     fill: var(--green-dark);
-    transition: .3s;
+    transition: .1s;
   }
 
   span {
     background-color: var(--green-dark);
-    transition: .3s;
+    transition: .1s;
   }
 
   :hover span {
     background-color: var(--gray-dark);
-    transition: .3s;
+    transition: .1s;
   }
 
 }
@@ -140,6 +148,7 @@
     color: var(--white);
     position: relative;
     pointer-events: all;
+
     &::before {
       position: absolute;
       content: '';
@@ -152,6 +161,7 @@
       transform: scaleX(0);
       transition: transform 0.3s ease-in-out;
     }
+
     &:hover::before {
       transform-origin: left;
       transform: scaleX(1);
