@@ -21,8 +21,10 @@
   li {
     &:not(:last-child) {
       display: flex;
+      align-items: center;
 
       img {
+        height: 22px;
         margin-right: 10px;
       }
     }
