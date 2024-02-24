@@ -1,8 +1,9 @@
 .benefits__inner {
-  color: var(--gray-dark);
+
 }
 
 .benefits__title {
+  color: var(--text-color-dark);
   margin-left: 35px;
 }
 
@@ -19,6 +20,7 @@
 .benefits__list-item {
   max-width: 280px;
   display: flex;
+  color: var(--text-color-dark);
   align-items: center;
   justify-content: center;
   flex-direction: column;
