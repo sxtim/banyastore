@@ -1,14 +1,16 @@
 .card {
   position: relative;
   width: 300px;
-  //height: 340px;
+  height: 349px;
   border-radius: 5px;
   transition: .1s;
   margin: 10px 5px;
+  box-shadow: 0 0px 0px #777777, inset 0 0 3px #777777;
 
   &:hover {
     transition: .1s;
     box-shadow: 0 3px 5px #777777, inset 0 0 0 #777777;
+    transform: scale(1.01);
   }
 }
 
@@ -78,24 +80,26 @@
 }
 
 .card__title {
-  max-width: 160px;
-  min-height: 70px;
+  //max-width: 160px;
+  min-height: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
   color: var(--text-color-dark);
+  margin-bottom: 10px;
 }
 
 .card__in-stock {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  //justify-content: center;
+  //align-items: center;
   flex-wrap: wrap;
   gap: 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 114%;
-  color: #639f6f
+  color: #639f6f;
+  margin-top: 14px;
 }
 
 .card__in-stock img {

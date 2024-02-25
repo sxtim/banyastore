@@ -1,7 +1,7 @@
-import KeenSlider from 'keen-slider'
 import 'keen-slider/keen-slider.min.css'
+import KeenSlider from "keen-slider";
 
-function navigation(slider) {
+function navigationPop(slider) {
     let wrapper, dots, arrowLeft, arrowRight
     // let timeout
     // let mouseOver = false
@@ -52,9 +52,9 @@ function navigation(slider) {
             removeElement(arrowRight)
             return
         }
-        arrowLeft = createDiv("arrow arrow--left")
+        arrowLeft = createDiv("arrow-pop arrow-pop--left")
         arrowLeft.addEventListener("click", () => slider.prev())
-        arrowRight = createDiv("arrow arrow--right")
+        arrowRight = createDiv("arrow-pop arrow-pop--right")
         arrowRight.addEventListener("click", () => slider.next())
 
         wrapper.appendChild(arrowLeft)
@@ -69,7 +69,7 @@ function navigation(slider) {
             removeElement(wrapper)
             return
         }
-        wrapper = createDiv("keen-slider__wrapper")
+        wrapper = createDiv("popular-goods__slider-wrapper")
         slider.container.parentNode.appendChild(wrapper)
         wrapper.appendChild(slider.container)
     }
@@ -79,9 +79,9 @@ function navigation(slider) {
             removeElement(dots)
             return
         }
-        dots = createDiv("dots")
+        dots = createDiv("dots-pop")
         slider.track.details.slides.forEach((_e, idx) => {
-            var dot = createDiv("dot")
+            var dot = createDiv("dot-pop")
             dot.addEventListener("click", () => slider.moveToIdx(idx))
             dots.appendChild(dot)
         })
@@ -98,8 +98,8 @@ function navigation(slider) {
             : arrowRight.classList.remove("arrow--disabled")
         Array.from(dots.children).forEach(function (dot, idx) {
             idx === slide
-                ? dot.classList.add("dot--active")
-                : dot.classList.remove("dot--active")
+                ? dot.classList.add("dot-pop--active")
+                : dot.classList.remove("dot-pop--active")
         })
     }
 
@@ -121,10 +121,18 @@ function navigation(slider) {
     })
 }
 
-var slider = new KeenSlider("#keen-slider-top", {
+var slider = new KeenSlider("#popular-goods__slider", {
+    slides: {
+        perView: 4,
+        spacing: 15,
+    },
+    breakpoints: {
+        '(max-width: 1200px)': {
+            slides: {
+                perView: 3,
+                spacing: 15,
+            },
+        },
+    },
     loop: true,
-
-}, [navigation])
-
-
-
+}, [navigationPop] );

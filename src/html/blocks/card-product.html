@@ -18,15 +18,17 @@
     <div class="card__desc">
       <div class="card__desc-row">
         <div class="card__title">@@title</div>
-        <div class="card__in-stock">
-          <img src="../../img/card-product/tick.svg" alt="tick">
-          <span>@@inStock</span>
-        </div>
+
       </div>
       <div class="card__row-2">
         <div class="card__price-container">
           <span class="card__price">@@price</span>
-          <span class="card__price-old">@@priceOld</span>
+          <span class="card__price-old">@@priceOld</span><div class="card__in-stock">
+          <div class="card__tick">&#10004</div>
+          <div class="card__tick">&times</div>
+          <span>@@inStock</span>
+        </div>
+
         </div>
         <div class="card__btn">
           <button class="card__add-to-cart">

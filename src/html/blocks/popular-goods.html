@@ -76,11 +76,12 @@
       </div>
     </div>
     <h2 class="popular-goods__title title-s">Популярные товары</h2>
-    <div class="popular-goods__slider-wrapper">
-      <!--      @@include('card-product.html')-->
+    <!--      @@include('card-product.html')-->
+    <div class="popular-goods__slider-container">
       <div id="popular-goods__slider" class="keen-slider">
         @@loop('card-product.html','./data/popular-goods.json')
       </div>
     </div>
+    <a href="#!" class="popular__goods-btn btn btn-medium">ВСЕ ТОВАРЫ</a>
   </div>
 </section>

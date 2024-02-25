@@ -1,7 +1,10 @@
 .btn {
   //position: absolute;
-  max-width: 200px;
-  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 40px;
   margin: 3px 0;
   font-size: 16px;
   font-weight: 500;
