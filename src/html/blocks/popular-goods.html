@@ -76,9 +76,11 @@
       </div>
     </div>
     <h2 class="popular-goods__title title-s">Популярные товары</h2>
-    <div class="popular-goods__slider">
-<!--      @@include('card-product.html')-->
-      @@loop('card-product.html','./data/popular-goods.json')
+    <div class="popular-goods__slider-wrapper">
+      <!--      @@include('card-product.html')-->
+      <div id="popular-goods__slider" class="keen-slider">
+        @@loop('card-product.html','./data/popular-goods.json')
+      </div>
     </div>
   </div>
 </section>

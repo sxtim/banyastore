@@ -126,3 +126,10 @@ var slider = new KeenSlider("#keen-slider-top", {
 
 }, [navigation])
 
+var slider = new KeenSlider("#popular-goods__slider", {
+    slides: {
+        perView: 4,
+        spacing: 15,
+    },
+});
+
