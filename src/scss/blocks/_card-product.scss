@@ -1,7 +1,7 @@
 .card {
   position: relative;
   width: 300px;
-  height: 349px;
+  height: 348px;
   border-radius: 5px;
   transition: .1s;
   margin: 10px 5px;
@@ -64,6 +64,10 @@
 
 }
 
+.card__picture {
+  max-height: 222px;
+}
+
 .card__picture img {
   margin: 0 auto;
 }
@@ -80,7 +84,6 @@
 }
 
 .card__title {
-  //max-width: 160px;
   min-height: 40px;
   font-weight: 500;
   font-size: 16px;
