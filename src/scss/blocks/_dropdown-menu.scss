@@ -48,6 +48,10 @@
       color: var(--white);
       font-size: var(--base-font-size);
 
+      span {
+        text-align: center;
+      }
+
       //&:hover,
       //&:focus {
       //  //box-shadow:none;
