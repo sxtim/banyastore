@@ -1,7 +1,8 @@
-<section class="catalog">
+<section class="catalog section">
   <div class="container">
-    <div class="catalog_wrapper">
-
+    <h1 class="catalog__title title-s">Каталог</h1>
+    <div class="catalog__wrapper">
+      @@loop('card-catalog.html','./data/catalog.json')
     </div>
   </div>
 </section>

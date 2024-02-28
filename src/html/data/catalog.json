@@ -1,0 +1,38 @@
+[
+  {
+    "img": "catalog01.jpg",
+    "title": "ПЕЧИ ДЛЯ БАНИ И САУНЫ"
+  },
+  {
+    "img": "catalog02.png",
+    "title": "ОТОПИТЕЛЬНЫЕ ПЕЧИ"
+  },
+  {
+    "img": "catalog03.png",
+    "title": "СПЕЦИАЛЬНЫЕ ДЫМОХОДЫ"
+  },
+  {
+    "img": "catalog04.png",
+    "title": "КАМНИ ДЛЯ ПЕЧИ"
+  },
+  {
+    "img": "catalog05.png",
+    "title": "ПЛИТКА ДЛЯ ОТДЕЛКИ"
+  },
+  {
+    "img": "catalog06.png",
+    "title": "ОСВЕЩЕНИЕ ДЛЯ БАНИ"
+  },
+  {
+    "img": "catalog07.png",
+    "title": "ВСЕ ИЗ ДЕРЕВА"
+  },
+  {
+    "img": "catalog08.png",
+    "title": "АКСЕССУАРЫ"
+  },
+  {
+    "img": "catalog09.png",
+    "title": "ОБЛИЦОВКА КАМНЕМ"
+  }
+]
