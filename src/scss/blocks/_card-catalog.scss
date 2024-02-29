@@ -1,14 +1,16 @@
 .card-catalog {
   display: flex;
+  align-self: flex-start;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 310px;
-  height: 348px;
+  height: 274px;
   border-radius: 5px;
   transition: .1s;
   box-shadow: 0 0px 0px #777777, inset 0 0 3px #777777;
+  //margin-right: auto;
 
   &:hover {
     transition: .1s;
