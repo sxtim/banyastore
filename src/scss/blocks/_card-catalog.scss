@@ -1,16 +1,20 @@
 .card-catalog {
   display: flex;
-  align-self: flex-start;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 310px;
-  height: 274px;
+  width: 250px;
+  height: 270px;
   border-radius: 5px;
   transition: .1s;
   box-shadow: 0 0px 0px #777777, inset 0 0 3px #777777;
   //margin-right: auto;
+
+  @media (max-width: 768px)  {
+    width: 150px;
+    height: 230px;
+  }
 
   &:hover {
     transition: .1s;
@@ -24,12 +28,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 285px;
+  padding: 0 3px;
+  max-height: 270px;
   flex-grow: 1;
 
   img {
     margin: 0 auto;
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
@@ -37,8 +42,16 @@
 
 .card-catalog__title {
   height: 60px;
+  padding: 0 5px;
   width: 100%;
   margin-bottom: -2px;
+  text-align: center;
+
+  @media (max-width: 768px ) {
+    height: 40px;
+    font-size: 12px;
+  }
+
 }
 
 .card-catalog__link {
