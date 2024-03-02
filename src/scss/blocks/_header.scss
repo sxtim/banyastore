@@ -9,6 +9,14 @@
   font-weight: 500;
 }
 
+.header__logo {
+  max-width: 130px;
+  img {
+
+    height: auto;
+  }
+}
+
 .header__contacts {
   display: flex;
   align-items: center;
@@ -17,6 +25,10 @@
   gap: 15px;
   width: 700px;
   margin: 0 15px;
+
+  @media(max-width: 768px) {
+    margin: 0 3px;
+  }
 
   li {
     &:not(:last-child) {
@@ -60,6 +72,7 @@
 
   @media(max-width: 768px) {
     display: none;
+
   }
 }
 

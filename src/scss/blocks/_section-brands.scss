@@ -10,6 +10,12 @@
   overflow: hidden;
   margin-top: 45px;
   mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%,transparent);
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+
+
 }
 
 
@@ -23,6 +29,11 @@
     display: inline-flex;
     margin: 10px;
     transition: 0.5s;
+
+    @media (max-width: 768px) {
+      max-width: 130px;
+    }
+
   }
 }
 
@@ -35,6 +46,11 @@
     display: inline-flex;
     margin: 10px;
     transition: 0.5s;
+
+    @media (max-width: 768px) {
+      max-width: 130px;
+    }
+
   }
 }
 
