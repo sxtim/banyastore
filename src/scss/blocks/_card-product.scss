@@ -117,21 +117,29 @@
 }
 
 .card__in-stock {
-  display: flex;
+  //display: flex;
   //justify-content: center;
   //align-items: center;
+  margin-top: 12px;
+  margin-bottom: 3px;
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 14px;
   line-height: 114%;
   color: #639f6f;
+
+  @media(max-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
 }
 
-.card__in-stock img {
-  margin-top: 4px;
-  width: 15px;
-  height: 10px;
-}
+//.card__in-stock img {
+//  margin-top: 4px;
+//  width: 15px;
+//  height: 10px;
+//}
 
 .card__in-stock span {
   white-space: nowrap;
@@ -166,8 +174,6 @@
 }
 
 .card__price-old {
-  margin-top: 5px;
-  //margin-left: -45px;
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
