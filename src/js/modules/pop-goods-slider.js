@@ -133,6 +133,12 @@ var slider = new KeenSlider("#popular-goods__slider", {
                 spacing: 15,
             },
         },
+        '(max-width: 650px)': {
+            slides: {
+                perView: 2.3,
+                spacing: 0,
+            },
+        },
     },
     loop: true,
 }, [navigationPop] );

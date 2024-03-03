@@ -1,7 +1,7 @@
 .card {
   position: relative;
   width: 300px;
-  height: 348px;
+  max-height: 348px;
   border-radius: 5px;
   transition: .1s;
   margin: 10px 5px;
@@ -13,6 +13,11 @@
     //transform: scale(1.01);
     transform: translateY(-2px);
   }
+
+  @media (max-width: 650px) {
+    margin: 5px 3px;
+  }
+
 }
 
 .card__row-1 {
@@ -21,6 +26,11 @@
   align-items: center;
   width: 100%;
   padding: 15px 8px 0 8px;
+
+  @media(max-width: 768px) {
+    padding: 3px 3px;
+  }
+
 }
 
 .card__row-2 {
@@ -41,6 +51,12 @@
   border-radius: 2px;
   background-color: #4caf50;
   padding: 4px 6px;
+
+  @media(max-width: 560px) {
+    font-size: 12px;
+  }
+
+
 }
 
 .card__fav {
@@ -67,6 +83,7 @@
 
 .card__picture {
   max-height: 222px;
+  padding: 3px;
 }
 
 .card__picture img {
@@ -80,7 +97,7 @@
 .card__desc-row {
   display: flex;
   justify-content: space-between;
-  padding: 0 2px 0 8px;
+  padding: 0 6px;
 
 }
 
@@ -91,6 +108,12 @@
   line-height: 125%;
   color: var(--text-color-dark);
   margin-bottom: 10px;
+
+  @media (max-width: 815px) {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
 }
 
 .card__in-stock {
@@ -98,12 +121,10 @@
   //justify-content: center;
   //align-items: center;
   flex-wrap: wrap;
-  gap: 5px;
   font-weight: 600;
   font-size: 14px;
   line-height: 114%;
   color: #639f6f;
-  margin-top: 14px;
 }
 
 .card__in-stock img {
@@ -114,6 +135,17 @@
 
 .card__in-stock span {
   white-space: nowrap;
+
+  @media (max-width: 815px) {
+    font-size: 10px;
+  }
+}
+
+.card__price-container {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__price {
@@ -122,6 +154,15 @@
   line-height: 100%;
   text-align: center;
   color: var(--text-color-dark);
+
+  @media (max-width: 815px) {
+    font-size: 16px;
+  }
+
+  @media(max-width: 560px) {
+    font-size: 14px;
+  }
+
 }
 
 .card__price-old {
@@ -133,12 +174,24 @@
   text-decoration: line-through;
   text-align: center;
   color: #dedbdb;
+
+  @media (max-width: 815px) {
+    font-size: 16px;
+  }
+
+  @media(max-width: 560px) {
+    font-size: 14px;
+  }
+
 }
 
 .card__btn {
+  position: absolute;
   z-index: 9;
   max-width: 60px;
   max-height: 56px;
+  right: 0;
+  bottom: 0;
   transition: .1s ease-in-out;
 
   svg #basket-background {
@@ -164,6 +217,12 @@
     transition: .1s ease-in-out;
     fill: white;
   }
+
+  @media (max-width: 768px) {
+    max-width: 45px;
+    max-height: 41px;
+  }
+
 }
 
 .card__link {
