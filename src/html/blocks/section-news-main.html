@@ -1,6 +1,7 @@
 <section class="news-main section">
   <div class="container">
-    <div class="news-main__wrapper ">
+    <div class="news-main__wrapper">
+      @@loop('card-news.html','./data/card-news.json')
       <article class="news-main__item"></article>
     </div>
   </div>
