@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>BanyaStore</title>
-		<link rel="stylesheet" href="./css/main.css" />
-		<link rel="stylesheet" href="./fonts/raleway/stylesheet.css" />
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		@@include('blocks/section-top.html')
-		@@include('blocks/section-benefits.html')
-		@@include('blocks/section-brands.html')
-		@@include('blocks/section-popular-goods.html')
-		@@include('blocks/section-3d-projects.html')
-		@@include('blocks/section-news-main.html')
-		@@include('blocks/footer.html')
-		<script src="./js/index.bundle.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+
+@@include('blocks/header.html')
+<div class="main">
+  @@include('blocks/section-top.html')
+  @@include('blocks/section-benefits.html')
+  @@include('blocks/section-brands.html')
+  @@include('blocks/section-popular-goods.html')
+  @@include('blocks/section-3d-projects.html')
+  @@include('blocks/section-news-main.html')
+</div>
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+
+</body>
 </html>
