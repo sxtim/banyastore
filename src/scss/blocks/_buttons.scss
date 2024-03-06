@@ -40,6 +40,12 @@
     font-size: 14px;
   }
 
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+  }
+
 }
 
 .btn-medium:hover {
