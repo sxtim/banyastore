@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BanyaStore</title>
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css" />
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
 </head>
 <body>
 <header class="header">
@@ -195,80 +195,48 @@
 </div>
 </section>
 
-<section class="catalog section">
+<section class="lk section">
   <div class="container">
-    <h1 class="catalog__title title-s">Новостной блог</h1>
-    <div class="catalog__wrapper">
-      <div class="catalog-news__cards-wrapper">
-        
-<article class="card-news">
-  <div class="card-news__picture">
-    <img src="./img/news/news-m-1.jpg" alt="news01">
-  </div>
-  <div class="card-news__desc">
-  <h3 class="card-news__title">ПЕЧИ ДЛЯ БАНИ И САУНЫ</h3>
-  <h4 class="card-news__sub-title">Лучшие печи 2023 года по версии наших покупателей</h4>
-    <time class="card-news__data">14.12.2024</time>
-  </div>
-  <a href="#!" class="card-news__link"></a>
-</article>
+    <h1 class="lk__title title-s">Личный кабинет</h1>
+    <div class="lk__container">
 
-<article class="card-news">
-  <div class="card-news__picture">
-    <img src="./img/news/news-m-2.jpg" alt="news01">
-  </div>
-  <div class="card-news__desc">
-  <h3 class="card-news__title">ХИТ парад банных печей</h3>
-  <h4 class="card-news__sub-title">Лучшие печи 2023 года по версии наших покупателей</h4>
-    <time class="card-news__data">14.12.2024</time>
-  </div>
-  <a href="#!" class="card-news__link"></a>
-</article>
+      <nav class="lk__nav">
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Личные данные</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Заказы</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Избранное</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn btn-lk-nav-active" href="#!">Корзина</a></ul>
+      </nav>
 
-        
-<article class="card-news">
-  <div class="card-news__picture">
-    <img src="./img/news/news-m-1.jpg" alt="news01">
-  </div>
-  <div class="card-news__desc">
-  <h3 class="card-news__title">ПЕЧИ ДЛЯ БАНИ И САУНЫ</h3>
-  <h4 class="card-news__sub-title">Лучшие печи 2023 года по версии наших покупателей</h4>
-    <time class="card-news__data">14.12.2024</time>
-  </div>
-  <a href="#!" class="card-news__link"></a>
-</article>
+      <div class="user-data">
+        <div class="user-data__form-container">
+          <form class="user-data__form user-form">
+            <h2 class="user-data__title title-form">Личные данные</h2>
+            <label class="user-form__name">Имя</label>
+            <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+            <label class="user-form__phone">Телефон</label>
+            <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
+            <label class="user-form__email">Почта</label>
+            <input type="email" name="email" placeholder="" required/>
+            <label class="i'm not robot">I'm not Robot</label>
+            <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>
+            <button class="user-form-btn btn btn-medium" type="submit">Сохранить</button>
+          </form>
+          <form class="user-data__form user-form">
+            <h2 class="user-data__title title-form">Изменение пароля</h2>
+            <label class="user-form__pass">Новый пароль</label>
+            <input type="text" name="pass" id="user-form-pass" placeholder="" minlength="3" axlength="20" required/>
+            <label class="user-form__newpass">Подтвердите новый пароль</label>
+            <input type="text" name="newpass" id="user-form-newpass" placeholder="" axlength="12" required/>
+            <button class="user-form-btn btn btn-medium" type="submit">Изменить</button>
+          </form>
+        </div>
 
-<article class="card-news">
-  <div class="card-news__picture">
-    <img src="./img/news/news-m-2.jpg" alt="news01">
-  </div>
-  <div class="card-news__desc">
-  <h3 class="card-news__title">ХИТ парад банных печей</h3>
-  <h4 class="card-news__sub-title">Лучшие печи 2023 года по версии наших покупателей</h4>
-    <time class="card-news__data">14.12.2024</time>
-  </div>
-  <a href="#!" class="card-news__link"></a>
-</article>
-
-      </div>
-      <div class="catalog-pagination__container">
-        <!--      <button class="catalog__rectangle-limiter rectangle-limiter">-->
-        <!--        <div class="catalog__circular-arrow circular-arrow"></div>-->
-        <!--        <span>Показать ещё</span>-->
-        <!--      </button>-->
-        <nav aria-label="Pagination navigation">
-  <ul class="catalog__pagination pagination-page">
-    <li class="pagination-page__item"><a class="page-link" href="#">Previous</a></li>
-    <li class="pagination-page__item"><a class="page-link" href="#">1</a></li>
-    <li class="pagination-page__item"><a class="page-link" href="#">2</a></li>
-    <li class="pagination-page__item"><a class="page-link" href="#">3</a></li>
-    <li class="pagination-page__item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav>
       </div>
     </div>
   </div>
 </section>
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
