@@ -73,16 +73,16 @@
   transition: 200ms;
 
   @media (max-width: 998px) {
-    width: 150px;
+    //width: 150px;
     height: 30px;
     font-size: 14px;
   }
 
-  @media (max-width: 768px) {
-    width: 120px;
-    height: 25px;
-    font-size: 12px;
-  }
+  //@media (max-width: 768px) {
+  //  width: 120px;
+  //  height: 25px;
+  //  font-size: 12px;
+  //}
 
 }
 

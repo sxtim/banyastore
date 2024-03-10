@@ -14,10 +14,10 @@
   @@include('blocks/breadcrumb.html')
   <section class="catalog section">
     <div class="container">
-      <h1 class="catalog__title title-s">Каталог</h1>
+      <h1 class="catalog__title title-s">Печи для бани и сауны</h1>
       <div class="catalog__wrapper">
         <div class="catalog__cards-wrapper">
-          @@loop('blocks/card-catalog.html','./data/card-catalog.json')
+          @@loop('blocks/card-product.html','./data/card-product.json')
         </div>
         <div class="catalog-pagination__container">
           <!--      <button class="catalog__rectangle-limiter rectangle-limiter">-->
