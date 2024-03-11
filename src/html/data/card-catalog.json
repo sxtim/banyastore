@@ -6,34 +6,42 @@
   },
   {
     "img": "catalog02.png",
-    "title": "ОТОПИТЕЛЬНЫЕ ПЕЧИ"
+    "title": "ОТОПИТЕЛЬНЫЕ ПЕЧИ",
+    "link": "otopitelnye-pechi.html"
   },
   {
     "img": "catalog03.png",
-    "title": "СПЕЦИАЛЬНЫЕ ДЫМОХОДЫ"
+    "title": "СПЕЦИАЛЬНЫЕ ДЫМОХОДЫ",
+    "link": "specialnye-dymohody.html"
   },
   {
     "img": "catalog04.png",
-    "title": "КАМНИ ДЛЯ ПЕЧИ"
+    "title": "КАМНИ ДЛЯ ПЕЧИ",
+    "link": "kamni-dlya-pechi.html"
   },
   {
     "img": "catalog05.png",
-    "title": "ПЛИТКА ДЛЯ ОТДЕЛКИ"
+    "title": "ПЛИТКА ДЛЯ ОТДЕЛКИ",
+    "link": "plitka-dlya-otdelki.html"
   },
   {
     "img": "catalog06.png",
-    "title": "ОСВЕЩЕНИЕ ДЛЯ БАНИ"
+    "title": "ОСВЕЩЕНИЕ ДЛЯ БАНИ",
+    "link": "osveshenie-dlya-bani.html"
   },
   {
     "img": "catalog07.png",
-    "title": "ВСЕ ИЗ ДЕРЕВА"
+    "title": "ВСЕ ИЗ ДЕРЕВА",
+    "link": "vse-iz-dereva.html"
   },
   {
     "img": "catalog08.png",
-    "title": "АКСЕССУАРЫ"
+    "title": "АКСЕССУАРЫ",
+    "link": "aksessuary.html"
   },
   {
     "img": "catalog09.png",
-    "title": "ОБЛИЦОВКА КАМНЕМ"
+    "title": "ОБЛИЦОВКА КАМНЕМ",
+    "link": "oblitsovka-kamnem.html"
   }
 ]
