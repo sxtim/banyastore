@@ -1,0 +1,26 @@
+.product-detail__desc {
+  color: var(--text-color-dark);
+}
+
+
+.product-detail__btn-add-to-fav {
+  display: flex;
+  align-items: center;
+
+  svg  {
+    width: 34px;
+    height: 30px;
+  }
+
+  svg path {
+    transition-property: all;
+    transition: .1s ease-in-out;
+    stroke: #000000;
+  }
+
+  &:hover svg path {
+    transition-property: all;
+    transition: .1s ease-in-out;
+    stroke: red;
+  }
+}
