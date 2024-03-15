@@ -318,7 +318,15 @@ var thumbnails = new KeenSlider(
         initial: 0,
         slides: {
             perView: 4,
-            spacing: 5,
+            spacing: 10,
+        },
+        breakpoints: {
+            '(max-width: 768px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 5,
+                },
+            },
         },
     },
     [ThumbnailPlugin(slider3)]

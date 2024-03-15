@@ -3,6 +3,12 @@
   display: flex;
   justify-content: space-around;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+
 }
 
 .product-detail__logo {
@@ -12,12 +18,19 @@
 .product-detail__desc {
   max-width: 390px;
   color: var(--text-color-dark);
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 }
 
 .product-detail__title {
-
   font-size: 30px;
-
+  margin-bottom: 5px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .product-detail__status {
@@ -26,6 +39,11 @@
   line-height: 125%;
   color: #639F6F;
   margin-bottom: 15px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 }
 
 .product-detail__subtitle {
@@ -33,16 +51,22 @@
   font-size: 16px;
   line-height: 125%;
   margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 }
 
 .product-detail__facing {
+  display: inline-block;
   font-weight: 500;
   color: #639F6F;
   margin-bottom: 10px;
 }
 
 .product-detail__price-container {
-  margin-top: 40px;
+  margin-top: 25px;
 }
 
 .product-detail__price {
@@ -50,6 +74,12 @@
   font-size: 30px;
   line-height: 107%;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+
+
 }
 
 .product-detail__price-old {
@@ -60,12 +90,18 @@
   text-align: center;
   vertical-align: bottom;
   color: #8a8a8a;
+
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 }
 
 .product-detail__btns-container {
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 
 
@@ -76,6 +112,11 @@
   svg  {
     width: 34px;
     height: 30px;
+
+    @media (max-width: 768px) {
+      height: 22px;
+    }
+
   }
 
   svg path {
@@ -100,6 +141,15 @@
 .product-detail__slider-wrapper {
   width: 520px;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 391px;
+  }
+
+  @media (max-width: 419px) {
+    width: 331px;
+  }
+
 }
 
 
@@ -124,6 +174,7 @@
   cursor: pointer;
 }
 .product-detail__thumbnails .keen-slider__slide.active {
-  border: 1px solid var(--green-dark);
+  //border: 1px solid var(--green-dark);
   border-radius: 5px;
+  box-shadow: 0 0px 0px #777777, inset 0 0 5px #777777;
 }
