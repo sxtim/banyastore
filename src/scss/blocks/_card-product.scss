@@ -71,7 +71,7 @@
   svg path {
     transition-property: all;
     transition: .1s ease-in-out;
-    stroke: #DEDBDB;
+    stroke: #8a8a8a;
   }
 
   &:hover svg path {
@@ -180,7 +180,7 @@
   line-height: 125%;
   text-decoration: line-through;
   text-align: center;
-  color: #dedbdb;
+  color: #8a8a8a;
 
   @media (max-width: 815px) {
     font-size: 16px;
