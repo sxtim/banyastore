@@ -3,5 +3,6 @@
 
 // import  './modules/slider-custom';
 import  './modules/sliders';
+import  './modules/product-detail-tabs';
 
 
