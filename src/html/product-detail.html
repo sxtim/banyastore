@@ -196,17 +196,24 @@
             </ul>
           </div>
 
-          <div id="tab4-content"
+          <div class="product-detail__comments" id="tab4-content"
                role="tabpanel"
                aria-labelledby="tab4"
                tabindex="0"
                aria-hidden="true">
 
-            <p>Aenean id purus et lectus scelerisque bibendum. Nunc laoreet laoreet sapien, ut sollicitudin orci
-              tincidunt nec. Duis et mi ultrices, iaculis dolor luctus, dignissim sapien. Ut in porttitor augue.
-              Aenean a libero vel ligula tempor consectetur. Pellentesque quam tortor, interdum vel posuere at,
-              sollicitudin et arcu. Quisque et semper nisl. Curabitur vitae accumsan eros. Mauris hendrerit sodales
-              purus vel maximus. Donec interdum velit arcu, eu condimentum odio pharetra id.</p>
+            @@include('blocks/card-comment.html')
+            @@include('blocks/card-comment.html')
+            @@include('blocks/card-comment.html')
+            <article class="card-comment">
+              <div class="card-comment__desc">
+                <div class="card-comment__name">Федор Лейкин </div>
+                <time class="card-comment__date">08.11.2023</time>
+                <div class="card-comment__message">Печь просто бомба. Паримся всей семьей, отличный режим русской бани. А еще она красивая и не обжигает за счет облицовки камнем. asdfsadfasdf asdf asdf asdf asdf asdf asdf asdfqwerge rg sdfag erg sdfg aerg qwerg asdg asdfg erg dsafg</div>
+
+              </div>
+              <a href="#!" class="card-comment__link">Далее</a>
+            </article>
           </div>
         </div>
       </div>
