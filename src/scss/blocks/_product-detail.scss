@@ -71,9 +71,9 @@
   @media (max-width: 768px) {
     font-size: 22px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
+    //flex-direction: column;
+    align-items: end;
+    justify-content: center;
   }
 
 }
@@ -110,7 +110,19 @@
 .product-detail__btns-container {
   margin-top: 15px;
   display: flex;
-  gap: 30px;
+  gap: 25px;
+
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+
+}
+
+.product-detail__btn-add-to-cart {
+  width: 150px;
+  height: 30px;
+  font-size: 14px;
 }
 
 
@@ -131,7 +143,7 @@
   svg path {
     transition-property: all;
     transition: .1s ease-in-out;
-    stroke: #000000;
+    stroke: #8a8a8a;
   }
 
   &:hover svg path {
