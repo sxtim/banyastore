@@ -6,3 +6,22 @@ import  './modules/sliders';
 import  './modules/product-detail-tabs';
 
 
+
+// let cardCommentHeight = document.querySelector(".card-comment");
+//
+// function getHeight(element) {
+//     element.style.visibility = "hidden";
+//     document.body.appendChild((element));
+//     let height = element.offsetHeight + 0;
+//     document.body.removeChild(element);
+//     element.style.visibility = "visible";
+//     return height;
+// }
+//
+//
+//
+//
+// // console.log(document.querySelector(".card-comment").scrollHeight)
+// console.log(getHeight(cardCommentHeight));
+
+
