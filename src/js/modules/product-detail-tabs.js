@@ -89,3 +89,31 @@ function Tabs(args) {
 window.onload = function() {
     var tabs = new Tabs();
 };
+
+
+// Card comment more/hide text
+
+//TODO Card comment more/hide text
+
+// let cardComment = document.querySelector(".card-comment");
+// let compStyles = window.getComputedStyle(cardComment);
+// let cardCommentHeight = parseInt(compStyles.height, 10);
+// console.log(cardCommentHeight);
+//
+// const cardCommentBtn = document.querySelector(".card-comment__btn");
+//
+//     function toggleDescriptionHeight(e) {
+//         cardComment.classList.toggle('expanded');
+//         if (e.target.textContent === 'Expand') {
+//             e.target.textContent = 'Collapse';
+//         } else {
+//             e.target.textContent = 'Expand';
+//         }
+//     } // this function has been moved out of the if condition
+//
+//
+//     if (cardCommentHeight > 100) { // the 'txt >= 100 &&' can go
+//         cardCommentBtn.addEventListener('click', toggleDescriptionHeight);
+//     } else {
+//         showHideBtn.style.display = "none";
+//     };

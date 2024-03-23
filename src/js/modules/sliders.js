@@ -3,32 +3,32 @@ import 'keen-slider/keen-slider.min.css'
 
 function navigation(slider) {
     let wrapper, dots, arrowLeft, arrowRight
-    // let timeout
-    // let mouseOver = false
-    // function clearNextTimeout() {
-    //     clearTimeout(timeout)
-    // }
-    // function nextTimeout() {
-    //     clearTimeout(timeout)
-    //     if (mouseOver) return
-    //     timeout = setTimeout(() => {
-    //         slider.next()
-    //     }, 2000)
-    // }
-    // slider.on("created", () => {
-    //     slider.container.addEventListener("mouseover", () => {
-    //         mouseOver = true
-    //         clearNextTimeout()
-    //     })
-    //     slider.container.addEventListener("mouseout", () => {
-    //         mouseOver = false
-    //         nextTimeout()
-    //     })
-    //     nextTimeout()
-    // })
-    // slider.on("dragStarted", clearNextTimeout)
-    // slider.on("animationEnded", nextTimeout)
-    // slider.on("updated", nextTimeout)
+    let timeout
+    let mouseOver = false
+    function clearNextTimeout() {
+        clearTimeout(timeout)
+    }
+    function nextTimeout() {
+        clearTimeout(timeout)
+        if (mouseOver) return
+        timeout = setTimeout(() => {
+            slider.next()
+        }, 2000)
+    }
+    slider.on("created", () => {
+        slider.container.addEventListener("mouseover", () => {
+            mouseOver = true
+            clearNextTimeout()
+        })
+        slider.container.addEventListener("mouseout", () => {
+            mouseOver = false
+            nextTimeout()
+        })
+        nextTimeout()
+    })
+    slider.on("dragStarted", clearNextTimeout)
+    slider.on("animationEnded", nextTimeout)
+    slider.on("updated", nextTimeout)
 
     function markup(remove) {
         wrapperMarkup(remove)
