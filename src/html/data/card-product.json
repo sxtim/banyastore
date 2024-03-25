@@ -3,56 +3,56 @@
     "img": "card01",
     "title": "Печь дровянная \nKarina 114",
     "inStock": "в наличии",
-    "price": "50000₽",
-    "priceOld":"72000₽"
+    "price": "50 000₽",
+    "priceOld":"72 000₽"
   },
   { "status": "Акция",
     "img": "card02",
     "title": "Одностенный дымоход \nFerrum",
     "inStock": "в наличии",
-    "price": "2355000₽",
-    "priceOld":"1278000₽"
+    "price": "1 355 000₽",
+    "priceOld":"1 278 000₽"
   },
   { "status": "Хит",
     "img": "card03",
     "title": "Печь электрическая\nHarvia",
     "inStock": "нет в наличии",
-    "price": "144000 ₽",
-    "priceOld":"87000 ₽"
+    "price": "144 000 ₽",
+    "priceOld":"87 000 ₽"
   },
   { "status": "Акция",
     "img": "card04",
     "title": "Ведро банное 18л\nФабрика Малина",
     "inStock": "в наличии",
-    "price": "50000 ₽",
-    "priceOld":"72000 ₽"
+    "price": "50 000 ₽",
+    "priceOld":"72 000 ₽"
   },
   { "status": "Хит",
     "img": "card01",
     "title": "Печь дровянная \nKarina 114",
     "inStock": "нет в наличии",
-    "price": "155000 ₽",
-    "priceOld":"372000 ₽"
+    "price": "15 5000 ₽",
+    "priceOld":"372 000 ₽"
   },
   { "status": "Акция",
     "img": "card04",
     "title": "Ведро банное 18л\nФабрика Малина",
     "inStock": "в наличии",
-    "price": "50000 ₽",
-    "priceOld":"72000 ₽"
+    "price": "50 000 ₽",
+    "priceOld":"72 000 ₽"
   },
   { "status": "Акция",
     "img": "card04",
     "title": "Ведро банное 18л\nФабрика Малина",
     "inStock": "в наличии",
-    "price": "50000 ₽",
-    "priceOld":"72000 ₽"
+    "price": "50 000 ₽",
+    "priceOld":"72 000 ₽"
   },
   { "status": "Акция",
     "img": "card03",
     "title": "Печь дровянная \nKarina 114",
     "inStock": "нет в наличии",
-    "price": "55000 ₽",
-    "priceOld":"62000 ₽"
+    "price": "55 000 ₽",
+    "priceOld":"62 000 ₽"
   }
 ]

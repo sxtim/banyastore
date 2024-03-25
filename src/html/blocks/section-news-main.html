@@ -11,7 +11,19 @@
         </div>
       </article>
       @@loop('card-news.html','./data/card-news.json')
-      @@loop('card-news.html','./data/card-news.json')
+      <article class="card-news">
+        <div class="card-news__picture">
+          <img src="./img/news/news-m-2.jpg" alt="news01">
+        </div>
+        <div class="card-news__desc">
+          <h3 class="card-news__title">ХИТ парад банных печей</h3>
+          <h4 class="card-news__sub-title">Лучшие печи 2023 года по версии наших покупателей</h4>
+          <time class="card-news__date">12 января 2023</time>
+        </div>
+        <a href="#!" class="card-news__link"></a>
+      </article>
+
+      <!--      @@loop('card-news.html','./data/card-news.json')-->
     </div>
   </div>
 </section>
