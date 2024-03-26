@@ -15,16 +15,18 @@
   <section class="cart section">
     <div class="container">
       <h1 class="cart__title title-s">Корзина</h1>
-      <div class="cart__wrapper">
-        @@include('blocks/card-cart.html')
+      <div class="cart__container">
+        <div class="cart__wrapper-card">
+          @@include('blocks/card-cart.html')
 
 
-        <div class="pagination__container">
-          <!--      <button class="catalog__rectangle-limiter rectangle-limiter">-->
-          <!--        <div class="catalog__circular-arrow circular-arrow"></div>-->
-          <!--        <span>Показать ещё</span>-->
-          <!--      </button>-->
-          @@include('blocks/pagination-page.html')
+          <div class="pagination__container">
+            <!--      <button class="catalog__rectangle-limiter rectangle-limiter">-->
+            <!--        <div class="catalog__circular-arrow circular-arrow"></div>-->
+            <!--        <span>Показать ещё</span>-->
+            <!--      </button>-->
+            @@include('blocks/pagination-page.html')
+          </div>
         </div>
       </div>
     </div>

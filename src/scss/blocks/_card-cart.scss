@@ -1,5 +1,42 @@
 .cart-card {
+  position: relative;
+  display: flex;
+  max-width: 800px;
+  gap: 25px;
+  //align-items: center;
+  justify-content: space-between;
   color: var(--text-color-dark);
+
+  @media (max-width: 768px) {
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: flex-start;
+  }
+}
+
+.cart-card__picture {
+ width: 100px;
+  height: 88px;
+}
+
+.cart-card__desc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+.cart-card__title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
 }
 
 
@@ -12,8 +49,12 @@
 
 
 .cart-card__count {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+  align-self: self-start;
+  //position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .count__minus, .count__plus {
@@ -22,6 +63,17 @@
   height: 32px;
   background-color: #e8e8e8;
   border-radius: 5px;
+  transition: .1s;
+
+  &:hover {
+    background-color: #d3d3d3;
+  }
+
+  @media (max-width: 815px) {
+    width: 24px;
+    height: 24px;
+  }
+
 }
 
 .count__minus:after {
@@ -60,3 +112,60 @@
   position: absolute;
   top: 50%;
 }
+
+.cart-card__price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--text-color-dark);
+
+  @media (max-width: 815px) {
+    font-size: 16px;
+  }
+
+  @media(max-width: 560px) {
+    font-size: 14px;
+  }
+}
+
+.cart-card__price-old {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-decoration: line-through;
+  color: #8a8a8a;
+
+  @media (max-width: 815px) {
+    font-size: 14px;
+  }
+
+  @media(max-width: 560px) {
+    font-size: 14px;
+  }
+}
+
+.cart-card__btns {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__btn-delete {
+  width: 24px;
+  height: 22px;
+  &:hover {
+     svg path {
+       fill: black;
+     }
+   }
+}
+
