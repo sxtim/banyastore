@@ -4,6 +4,7 @@
 // import  './modules/slider-custom';
 import  './modules/sliders';
 import  './modules/product-detail-tabs';
+import  './modules/cart-discount-acc.js';
 
 
 
