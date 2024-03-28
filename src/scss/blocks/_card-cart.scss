@@ -89,7 +89,7 @@
   content: '';
   width: 12px;
   height: 2px;
-  background-color: #242424;
+  background-color: var(--text-color-dark);
   border-radius: 4px;
   display: block;
   left: calc(50% - 6px);
@@ -97,11 +97,24 @@
   top: 50%;
 }
 
+.minus-disabled {
+  //background-color: #f1f1f5;
+  &:after {
+    background-color: #d3d3d3;
+
+  }
+
+  &:hover {
+    cursor: default;
+    background-color: #e8e8e8;
+  }
+}
+
 .count__plus::before {
   content: '';
   width: 12px;
   height: 2px;
-  background-color: #242424;
+  background-color: var(--text-color-dark);
   border-radius: 4px;
   display: block;
   left: calc(50% - 6px);
@@ -114,7 +127,7 @@
   content: '';
   width: 12px;
   height: 2px;
-  background-color: #242424;
+  background-color: var(--text-color-dark);
   border-radius: 4px;
   display: block;
   left: calc(50% - 6px);
