@@ -1,14 +1,13 @@
 .cart-card {
   position: relative;
   display: flex;
-  max-width: 800px;
   width: 100%;
   gap: 25px;
   //align-items: center;
   justify-content: space-between;
   color: var(--text-color-dark);
   border-bottom: 1px solid var(--gray);
-  padding: 10px;
+  padding: 15px 10px;
   @media (max-width: 768px) {
     gap: 8px;
     padding: 10px 0;
