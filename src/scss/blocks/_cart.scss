@@ -175,5 +175,30 @@
   }
 }
 
+.cart__delivery-list {
+  color: var(--text-color-dark);
+}
+
+
+
+.cart__delivery-item input[type=radio] {
+  display: none;
+}
+.cart__delivery-item label {
+
+}
+
+
+
+/* Checked */
+.cart__delivery-item input[type=radio]:checked + label {
+  background: #ffe0a6;
+}
+
+/* Hover */
+.cart__delivery-item label:hover {
+  color: #666;
+}
+
 
 
