@@ -16,7 +16,8 @@
     <div class="container">
       <h1 class="cart__title title-s">Корзина</h1>
       <div class="cart__container">
-        <div class="cart__wrapper-card">
+        <div class="cart__wrapper-main">
+          <div class="cart__wrapper-card">
           @@include('blocks/card-cart.html')
           <article class="cart-card">
             <img class="cart-card__picture" src="./img/cart/cart-01.png" alt="cart-img">
@@ -71,6 +72,33 @@
             <!--      </button>-->
 <!--            @@include('blocks/pagination-page.html')-->
 <!--          </div>-->
+          </div>
+
+          <div class="cart__delivery">
+            <h3 class="cart__delivery-title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
+          <div class="cart__delivery-list">
+
+            <div class="cart__delivery-item ">
+              <input id="radio-1" type="radio" name="radio" value="1" checked>
+              <label class="delivery-list__item" for="radio-1">
+                <img src="./img/product-detail/delivery-ic-01.svg" alt="ic">
+                <p>Самовывоз из пункта выдачи:<br> МО, г. Домодедово, мкр. Белые столбы, ул. Авенариуса С 6</p>
+              </label>
+            </div>
+            <div class="cart__delivery-item">
+              <input id="radio-2" type="radio" name="radio" value="2">
+              <label class="delivery-list__item" for="radio-2"><img src="./img/product-detail/delivery-ic-02.svg" alt="ic">
+                <p>Доставка ТК до терминала:
+                  <br> СДЭК, ПЭК, Байкал - сервис или Деловые линии.</p></label>
+            </div>
+            <div class="cart__delivery-item">
+              <input id="radio-3" type="radio" name="radio" value="3">
+              <label class="delivery-list__item" for="radio-3"><img src="./img/product-detail/delivery-ic-03.svg" alt="ic">
+                <p>Адресная доставка
+                  <br> транспортной компанией или курьером</p></label>
+            </div>
+          </div>
+        </div>
         </div>
         <div class="cart__sidebar-sticky">
           <div class="cart__total-container">
@@ -102,34 +130,7 @@
           <a href="#!" class="cart__order-btn btn btn-medium" type="button">Оформить заказ</a>
         </div>
       </div>
-      <div class="cart__delivery cart__delivery-list">
 
-<!--        <ul class="cart__delivery-list delivery-list">-->
-<!--          <li class="delivery-list__item delivery-list__item-active"> <img src="./img/product-detail/delivery-ic-01.svg" alt="ic">-->
-<!--            <p>Самовывоз из пункта выдачи:<br> МО, г. Домодедово, мкр. Белые столбы, ул. Авенариуса С 6</p></li>-->
-<!--          <li class="delivery-list__item"><img src="./img/product-detail/delivery-ic-02.svg" alt="ic">-->
-<!--            <p>Доставка ТК до терминала:<br> СДЭК, ПЭК, Байкал - сервис или Деловые линии.</p></li>-->
-<!--          <li class="delivery-list__item"><img src="./img/product-detail/delivery-ic-03.svg" alt="ic">-->
-<!--            <p>Адресная доставка<br> транспортной компанией или курьером</p></li>-->
-<!--        </ul>-->
-
-
-        <div class="cart__delivery-item ">
-          <input id="radio-1" type="radio" name="radio" value="1" checked>
-          <label class="delivery-list__item" for="radio-1">
-            <img src="./img/product-detail/delivery-ic-01.svg" alt="ic">
-            <p>Самовывоз из пункта выдачи:<br> МО, г. Домодедово, мкр. Белые столбы, ул. Авенариуса С 6</p>
-          </label>
-        </div>
-        <div class="cart__delivery-item">
-          <input id="radio-2" type="radio" name="radio" value="2">
-          <label for="radio-2">Radio button 2</label>
-        </div>
-        <div class="cart__delivery-item">
-          <input id="radio-3" type="radio" name="radio" value="3">
-          <label for="radio-3">Radio button 3</label>
-        </div>
-      </div>
     </div>
   </section>
 </div>

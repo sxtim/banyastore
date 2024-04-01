@@ -288,14 +288,15 @@
 }
 
 .delivery-list__item {
-  max-width: 276px;
-  height: 70px;
+  max-width: 300px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
-  font-size: 12px;
-  padding: 8px;
+  font-size: 14px;
+  line-height: 130%;
+  padding: 15px;
   border: 1px solid #8a8a8a;
   border-radius: 5px;
 
