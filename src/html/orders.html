@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+@@include('blocks/header.html')
+@@include('blocks/breadcrumb.html')
+<section class="lk section">
+  <div class="container">
+    <h1 class="lk__title title-s">Личный кабинет</h1>
+    <div class="lk__container">
+
+      <nav class="lk__nav">
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Личные данные</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Заказы</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Избранное</a></ul>
+        <ul class="lk__nav-item"><a class="btn-lk-nav btn btn-lk-nav-active" href="#!">Корзина</a></ul>
+      </nav>
+
+      <div class="orders">
+        <h2 class=" title-form">Заказы</h2>
+        <div class="orders__wrapper-card">
+          @@include('blocks/card-order.html')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
