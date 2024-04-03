@@ -41,7 +41,6 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  //flex-wrap: wrap;
 
   @media  (max-width: 998px) {
     flex-direction: column;
@@ -63,13 +62,17 @@
   //box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
 
   @media (max-width: 998px) {
-    align-items: center;
+    //align-items: center;
   }
 
 }
 
 .user-data__form-container {
   width: 100%;
+
+  @media (max-width: 998px) {
+    align-items: flex-start;
+  }
 }
 
 .user-data input {
@@ -86,6 +89,10 @@
 .user-data__form {
   width: 100%;
   max-width: 400px;
+}
+
+.user-form-btn {
+  margin-bottom: 40px;
 }
 
 

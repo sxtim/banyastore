@@ -77,7 +77,7 @@
             <!--          </div>-->
           </div>
 
-          <div class="cart__delivery">
+          <div class="cart__main-block-wrapper">
             <h3 class="cart__block-title">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h3>
             <div class="cart__delivery-list delivery-list">
               <div class="cart__delivery-item ">
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="cart__payment-method">
+          <div class="cart__main-block-wrapper">
             <h3 class="cart__block-title">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h3>
             <div class="cart__payment-method-list delivery-list">
               <div class="cart__payment-method-item">
@@ -120,8 +120,8 @@
                 <input id="radio-5" type="radio" name="radio1" value="5">
                 <label for="radio-5">
                   <p>Через СБП</p> <span>Оплатить сейчас</span>
-                    <img class="payment-method-item__img-container" src="./img/cart/sbp.svg"
-                         alt="ic">
+                  <img class="payment-method-item__img-container" src="./img/cart/sbp.svg"
+                       alt="ic">
                 </label>
               </div>
               <div class="cart__payment-method-item">
@@ -131,24 +131,41 @@
                   <span> Оплата картой, наличными или СБП в пункте выдачи</span></label>
               </div>
             </div>
-
-
-            <!--            <h3 class="cart__block-title">СПОСОБ ОПЛАТЫ</h3>-->
-            <!--            <div class="cart__payment-method-list">-->
-            <!--              <div class="cart__payment-method-item">-->
-            <!--                <p class="cart__payment-method-item-title">Картой на сайте</p>-->
-            <!--                <span class="cart__payment-method-item-subtitle">Оплатить сейчас</span>-->
-            <!--              </div>-->
-            <!--              <div class="cart__payment-method-item">-->
-            <!--                <p class="cart__payment-method-item-title">Через СБП</p>-->
-            <!--                <span class="cart__payment-method-item-subtitle">Оплатить сейчас</span>-->
-            <!--              </div>-->
-            <!--              <div class="cart__payment-method-item">-->
-            <!--                <p class="cart__payment-method-item-title">При получении</p>-->
-            <!--                <span class="cart__payment-method-item-subtitle">Оплата картой, наличными или СБП в пункте выдачи</span>-->
-            <!--              </div>-->
-            <!--            </div>-->
           </div>
+            <div class="cart__main-block-wrapper">
+              <div class="cart__user-data">
+                <h3 class="cart__block-title">Проверьте контактные данные</h3>
+                <div class="user-data">
+
+                  <div class="user-data__form-container">
+                    <form class="user-data__form user-form">
+                      <label class="user-form__name">Имя</label>
+                      <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+                      <label class="user-form__phone">Телефон</label>
+                      <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
+                      <label class="user-form__email">Почта</label>
+                      <input type="email" name="email" placeholder="" required/>
+                      <!--            <label class="i'm not robot">I'm not Robot</label>-->
+                      <!--            <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
+
+                    </form>
+                    <form class="user-data__form user-form">
+                      <label class="user-form__city">Город</label>
+                      <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+                      <label class="user-form__street">Улица</label>
+                      <input type="text" name="reference" placeholder="" axlength="12" required/>
+                      <label class="user-form__build">Строение/Дом</label>
+                      <input type="email" name="email" placeholder="" required/>
+                      <!--            <label class="i'm not robot">I'm not Robot</label>-->
+                      <!--            <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
+                    </form>
+
+                  </div>
+                  <!--              <button class="user-form-btn btn btn-medium" type="submit">Сохранить</button>-->
+                </div>
+              </div>
+            </div>
+
         </div>
         <div class="cart__sidebar-sticky">
           <div class="cart__total-container">
