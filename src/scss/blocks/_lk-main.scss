@@ -13,11 +13,23 @@
   display: flex;
   gap: 10px;
 
-  @media (max-width: 520px) {
+  @media (max-width: 998px) {
     flex-direction: column;
     align-items: center;
   }
 
+}
+
+.lk__nav {
+  @media (max-width: 998px) {
+    width: 100%;
+  }
+}
+
+.btn-lk-nav  {
+  @media (max-width: 998px) {
+    width: 100%;
+  }
 }
 
 .title-form {
@@ -55,7 +67,7 @@
   flex-direction: column;
 
   color: black;
-  padding: 20px;
+  //padding: 20px;
   width: 100%;
   //background-color: #f9f9f9;
   border-radius: 5px;

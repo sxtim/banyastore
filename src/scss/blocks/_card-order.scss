@@ -9,17 +9,31 @@
 
 .order-card__top {
   padding-bottom: 28px;
-  box-sizing: content-box;
   border-bottom: 1px solid #e3e3e3;
 }
 
 .order-card__top-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
+.order-card__title {
+  font-size: 20px;
 
+ @media (max-width:768px ){
+   font-size: 16px;
+ }
+}
 
+.order-card__header-sum {
+  font-size: 20px;
+
+  @media (max-width:768px ){
+    font-size: 16px;
+  }
+
+}
 
 .order-card__link {
   color: var(--text-color-dark);
