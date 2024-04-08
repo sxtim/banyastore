@@ -27,7 +27,36 @@
         <h2><a class="title-form order-detail-title" href="./orders.html">К списку заказов</a></h2>
         <div class="order-detail__wrapper">
           @@include('blocks/card-order.html')
-          @@include('blocks/card-product-order.html')
+
+          <div class="cards-product-order__wrapper">
+            <h2 class="title-form cards-product-order-title">Товары в заказе</h2>
+            @@include('blocks/card-product-order.html')
+            @@include('blocks/card-product-order.html')
+          </div>
+          <div class="order-detail-total">
+            <table class="order-detail-total__table">
+              <tr class="order-detail-total__row">
+                <td class="order-detail-total__cell-title"><span
+                  class="order-detail-total__cell-decor"><span>Общая сумма</span></span></td>
+                <td class="order-detail-total__cell-value">255 000 ₽</td>
+              </tr>
+              <tr class="order-detail-total__row">
+                <td class="order-detail-total__cell-title"><span
+                  class="order-detail-total__cell-decor"><span>Доставка</span></span></td>
+                <td class="order-detail-total__cell-value">Бесплатно</td>
+              </tr>
+              <tr class="order-detail-total__row">
+                <td class="order-detail-total__cell-title"><span
+                  class="order-detail-total__cell-decor"><span>Скидка</span></span></td>
+                <td class="order-detail-total__cell-value">-30 000 ₽</td>
+              </tr>
+              <tr class="order-detail-total__row">
+                <td class="order-detail-total__cell-title"><span
+                  class="order-detail-total__cell-decor"><span>ИТОГО</span></span></td>
+                <td class="order-detail-total__cell-value">225 000 ₽</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>
