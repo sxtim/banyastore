@@ -11,7 +11,8 @@
 
 .lk__container {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+
 
   @media (max-width: 998px) {
     flex-direction: column;
@@ -74,7 +75,7 @@
   //box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
 
   @media (max-width: 998px) {
-    //align-items: center;
+    align-items: center;
   }
 
 }
@@ -83,7 +84,7 @@
   width: 100%;
 
   @media (max-width: 998px) {
-    align-items: flex-start;
+    align-items: center;
   }
 }
 
@@ -99,8 +100,16 @@
 }
 
 .user-data__form {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 400px;
+
+
+  @media (max-width: 998px) {
+    align-items: center;
+  }
+
 }
 
 .user-form-btn {

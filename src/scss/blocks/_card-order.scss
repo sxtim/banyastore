@@ -3,8 +3,13 @@
   flex-direction: column;
   box-shadow: 0 0px 0px #777777, inset 0 0 3px #777777;
   border-radius: 5px;
-  padding: 28px 32px;
+  padding: 20px 25px;
   color: var(--text-color-dark);
+
+  @media (max-width: 998px) {
+    padding: 10px 15px;
+  }
+
 }
 
 .order-card__top {

@@ -1,0 +1,13 @@
+.order-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-detail-title {
+  transition: .1s;
+  &:hover {
+    color: var(--green);
+  }
+}
