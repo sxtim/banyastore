@@ -35,7 +35,10 @@
 
 
 .order-detail-total {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .order-detail-total__table {
@@ -47,6 +50,10 @@
   @media (max-width: 768px) {
     font-size: 14px;
   }
+}
+
+.order-detail-total__btn {
+  margin-top: 20px;
 }
 
 
