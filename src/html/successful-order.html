@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+@@include('blocks/header.html')
+<div class="main">
+  <section class="section">
+    <div class="container">
+      <div class="successful-order">
+        <div class="successful-order__wrapper">
+          <h1 class="successful-order__title title-s">Ваш заказ успешно оформлен!</h1>
+          <p class="successful-order__subtitle">После подтверждения, оплатить его можно в личном кабинете.</p>
+          <a href="./index.html" class="btn btn-medium btn-successful-order">Вернуться на главную</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
