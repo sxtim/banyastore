@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+@@include('blocks/header.html')
+<div class="main">
+  @@include('blocks/breadcrumb.html')
+  <section class="projects section">
+    <div class="container">
+      <h1 class="title title-s">3D проектирование парного помещения</h1>
+    </div>
+    <img class="projects__top-picture" src="./img/3d-projects-page/3d-01.jpg" alt="picture">
+    <div class="container">
+      <div class="projects__content-wrapper">
+        <div class="projects__content-left">
+          <p class="projects__content-left-p1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, alias asperiores, aut culpa cumque eaque earum esse expedita illo maiores, placeat praesentium quaerat quos repudiandae soluta tenetur vel velit voluptate.
+          </p>
+          <p class="projects__content-left-p2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, alias asperiores, aut culpa cumque eaque earum esse expedita illo maiores, placeat praesentium quaerat quos repudiandae soluta tenetur vel velit voluptate.
+          </p>
+        </div>
+        <div class="projects__content-right">
+          <p class="projects__content-right-p">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quo repellat sapiente suscipit voluptatibus! Aut consectetur deleniti dolorem eum ipsam maiores, maxime molestias, mollitia nisi, nostrum quaerat recusandae repellat voluptatum.
+          </p>
+          <img class="projects__content-picture" src="./img/3d-projects-page/3d-02.jpg" alt="picture">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
