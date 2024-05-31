@@ -282,12 +282,20 @@ function ThumbnailPlugin(main) {
 
 
 
+let mainPageSliderTop = document.getElementById("keen-slider-top")
+if (mainPageSliderTop) {
 
 var slider1 = new KeenSlider("#keen-slider-top", {
     loop: true,
 
 }, [navigation])
 
+
+}
+
+let mainPageSliderPopGoods = document.getElementById("popular-goods__slider")
+
+if (mainPageSliderPopGoods) {
 
 var slider2 = new KeenSlider("#popular-goods__slider", {
     slides: {
@@ -311,6 +319,12 @@ var slider2 = new KeenSlider("#popular-goods__slider", {
     loop: true,
 }, [navigationPop] );
 
+}
+
+let productDetailSlider = document.getElementById("product-detail-keen-slider")
+
+if (productDetailSlider) {
+
 var slider3 = new KeenSlider("#product-detail-keen-slider")
 var thumbnails = new KeenSlider(
     "#product-detail-thumbnails",
@@ -331,7 +345,7 @@ var thumbnails = new KeenSlider(
     },
     [ThumbnailPlugin(slider3)]
 )
-
+    }
 
 
 
