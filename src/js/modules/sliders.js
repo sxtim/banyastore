@@ -1,13 +1,17 @@
 import KeenSlider from 'keen-slider'
 import 'keen-slider/keen-slider.min.css'
 
+
+// MAIN PAGE TOP SLIDER
 function navigation(slider) {
     let wrapper, dots, arrowLeft, arrowRight
     let timeout
     let mouseOver = false
+
     function clearNextTimeout() {
         clearTimeout(timeout)
     }
+
     function nextTimeout() {
         clearTimeout(timeout)
         if (mouseOver) return
@@ -15,6 +19,7 @@ function navigation(slider) {
             slider.next()
         }, 2000)
     }
+
     slider.on("created", () => {
         slider.container.addEventListener("mouseover", () => {
             mouseOver = true
@@ -39,6 +44,7 @@ function navigation(slider) {
     function removeElement(elment) {
         elment.parentNode.removeChild(elment)
     }
+
     function createDiv(className) {
         var div = document.createElement("div")
         var classNames = className.split(" ")
@@ -122,8 +128,8 @@ function navigation(slider) {
 }
 
 
-
-function navigationPop(slider) {
+//MAIN PAGE POPULAR GOODS SLIDER
+function navigationPopularGoods(slider) {
     let wrapper, dots, arrowLeft, arrowRight
     // let timeout
     // let mouseOver = false
@@ -161,6 +167,7 @@ function navigationPop(slider) {
     function removeElement(elment) {
         elment.parentNode.removeChild(elment)
     }
+
     function createDiv(className) {
         var div = document.createElement("div")
         var classNames = className.split(" ")
@@ -244,7 +251,7 @@ function navigationPop(slider) {
 }
 
 
-
+//PRODUCT DETAIL SLIDER
 function ThumbnailPlugin(main) {
     return (slider) => {
         function removeActive() {
@@ -252,6 +259,7 @@ function ThumbnailPlugin(main) {
                 slide.classList.remove("active")
             })
         }
+
         function addActive(idx) {
             slider.slides[idx].classList.add("active")
         }
@@ -278,74 +286,102 @@ function ThumbnailPlugin(main) {
 }
 
 
-
-
-
-
+// MAIN PAGE TOP SLIDER
 let mainPageSliderTop = document.getElementById("keen-slider-top")
 if (mainPageSliderTop) {
+    var slider1 = new KeenSlider("#keen-slider-top", {
+        loop: true,
 
-var slider1 = new KeenSlider("#keen-slider-top", {
-    loop: true,
-
-}, [navigation])
+    }, [navigation])
 
 
 }
 
+//MAIN PAGE POPULAR GOODS SLIDER
 let mainPageSliderPopGoods = document.getElementById("popular-goods__slider")
-
 if (mainPageSliderPopGoods) {
 
-var slider2 = new KeenSlider("#popular-goods__slider", {
-    slides: {
-        perView: 4,
-        spacing: 15,
-    },
-    breakpoints: {
-        '(max-width: 1200px)': {
-            slides: {
-                perView: 3,
-                spacing: 15,
-            },
-        },
-        '(max-width: 650px)': {
-            slides: {
-                perView: 2.3,
-                spacing: 0,
-            },
-        },
-    },
-    loop: true,
-}, [navigationPop] );
-
-}
-
-let productDetailSlider = document.getElementById("product-detail-keen-slider")
-
-if (productDetailSlider) {
-
-var slider3 = new KeenSlider("#product-detail-keen-slider")
-var thumbnails = new KeenSlider(
-    "#product-detail-thumbnails",
-    {
-        initial: 0,
+    var slider2 = new KeenSlider("#popular-goods__slider", {
         slides: {
             perView: 4,
-            spacing: 10,
+            spacing: 15,
         },
         breakpoints: {
-            '(max-width: 768px)': {
+            '(max-width: 1200px)': {
                 slides: {
                     perView: 3,
-                    spacing: 5,
+                    spacing: 15,
+                },
+            },
+            '(max-width: 650px)': {
+                slides: {
+                    perView: 2.3,
+                    spacing: 0,
                 },
             },
         },
-    },
-    [ThumbnailPlugin(slider3)]
-)
-    }
+        loop: true,
+    }, [navigationPopularGoods]);
+
+}
+
+
+
+
+
+
+//PRODUCT DETAIL SLIDER
+let productDetailSlider = document.getElementById("product-detail-keen-slider")
+if (productDetailSlider) {
+    var slider3 = new KeenSlider("#product-detail-keen-slider")
+    var thumbnails = new KeenSlider(
+        "#product-detail-thumbnails",
+        {
+            initial: 0,
+            slides: {
+                perView: 4,
+                spacing: 10,
+            },
+            breakpoints: {
+                '(max-width: 768px)': {
+                    slides: {
+                        perView: 3,
+                        spacing: 5,
+                    },
+                },
+            },
+        },
+        [ThumbnailPlugin(slider3)]
+    )
+}
+
+//3D PROJECTS SLIDER
+let projectsPageSlider = document.getElementById("projects-page__slider")
+if (projectsPageSlider) {
+
+    var slider4 = new KeenSlider("#projects-page__slider", {
+        slides: {
+            perView: 3,
+            spacing: 15,
+        },
+        breakpoints: {
+            '(max-width: 1200px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 15,
+                },
+            },
+            '(max-width: 650px)': {
+                slides: {
+                    perView: 2.3,
+                    spacing: 0,
+                },
+            },
+        },
+        loop: true,
+    }, [navigationPopularGoods]);
+
+}
 
 
 

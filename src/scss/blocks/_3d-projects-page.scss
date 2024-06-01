@@ -198,3 +198,22 @@
   }
 
 }
+
+.projects-page__our-title {
+  max-width: 400px;
+  color: var(--text-color-dark);
+  border-color: var(--text-color-dark);
+
+  @media (max-width: 559px) {
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--text-color-dark);
+    border-color: var(--text-color-dark);
+  }
+
+
+}
+
+.projects-page__slider-container {
+  margin-top: 30px;
+}
