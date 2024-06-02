@@ -1,0 +1,56 @@
+[
+  {
+    "img": "card-project01.jpg",
+    "title": "3D Проект 1",
+    "subtitle": "25кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project02.jpg",
+    "title": "3D Проект 2",
+    "subtitle": "30кв",
+    "link": "#h"
+  },
+  {
+    "img": "card-project03.jpg",
+    "title": "3D Проект 3",
+    "subtitle": "35кв",
+    "link": "#."
+  },
+  {
+    "img": "card-project02.jpg",
+    "title": "3D Проект 2",
+    "subtitle": "30кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project01.jpg",
+    "title": "3D Проект 1",
+    "subtitle": "25кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project03.jpg",
+    "title": "3D Проект 3",
+    "subtitle": "35кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project01.jpg",
+    "title": "3D Проект 1",
+    "subtitle": "25кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project03.jpg",
+    "title": "3D Проект 3",
+    "subtitle": "35кв",
+    "link": "#"
+  },
+  {
+    "img": "card-project02.jpg",
+    "title": "3D Проект 2",
+    "subtitle": "30кв",
+    "link": "#"
+  }
+]
