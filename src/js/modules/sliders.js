@@ -374,7 +374,7 @@ if (projectsPageSlider) {
             '(max-width: 650px)': {
                 slides: {
                     perView: 2.3,
-                    spacing: 0,
+                    spacing: 10,
                 },
             },
         },
