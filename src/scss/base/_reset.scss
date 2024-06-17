@@ -83,9 +83,14 @@ button::-moz-focus-inner {
 	border: 0;
 }
 
-label {
+//label {
+//	cursor: pointer;
+//}
+
+input[type="checkbox"] {
 	cursor: pointer;
 }
+
 
 legend {
 	display: block;

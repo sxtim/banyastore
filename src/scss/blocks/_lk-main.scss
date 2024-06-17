@@ -104,12 +104,6 @@
   flex-direction: column;
   width: 100%;
   max-width: 400px;
-
-
-  @media (max-width: 998px) {
-    align-items: center;
-  }
-
 }
 
 .user-form-btn {

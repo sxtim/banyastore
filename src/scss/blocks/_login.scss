@@ -14,23 +14,13 @@
   color: var(--text-color-dark);
 }
 
-/*
-.user-data {
+
+.login-section__auth-form {
   display: flex;
   flex-direction: column;
-
-  color: black;
-  //padding: 20px;
-  width: 100%;
-  //background-color: #f9f9f9;
-  border-radius: 5px;
-  //box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
-
-  @media (max-width: 998px) {
-    align-items: center;
-  }
-
+  align-items: center;
 }
+
 
 .user-data__form-container {
   width: 100%;
@@ -40,7 +30,14 @@
   }
 }
 
-.user-data input {
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-box {
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -49,5 +46,9 @@
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 20px;
+  color: black;
 }
- */
+
+.input-check-box input{
+  border-radius: 5px;
+}
