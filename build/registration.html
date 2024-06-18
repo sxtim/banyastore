@@ -199,55 +199,45 @@
 </div>
 </section>
 
-<section class="lk section">
+<section class="registration section">
   <div class="container">
-    <h1 class="lk__title title-s">Личный кабинет</h1>
-    <div class="lk__container">
-
-      <nav class="lk__nav">
-        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Личные данные</a></ul>
-        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Заказы</a></ul>
-        <ul class="lk__nav-item"><a class="btn-lk-nav btn" href="#!">Избранное</a></ul>
-        <ul class="lk__nav-item"><a class="btn-lk-nav btn btn-lk-nav-active" href="#!">Корзина</a></ul>
-      </nav>
-
-      <div class="user-data">
-        <h2 class="user-data__title title-form">Личные данные</h2>
-        <div class="user-data__form-container">
-          <form class="user-data__form user-form">
-            <label class="user-form__name">Имя</label>
-            <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
-            <label class="user-form__phone">Телефон</label>
-            <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
-            <label class="user-form__email">Почта</label>
-            <input type="email" name="email" placeholder="" required/>
-<!--            <label class="i'm not robot">I'm not Robot</label>-->
-<!--            <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
-
-          </form>
-          <form class="user-data__form user-form">
-            <label class="user-form__city">Город</label>
-            <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
-            <label class="user-form__street">Улица</label>
-            <input type="text" name="reference" placeholder="" axlength="12" required/>
-            <label class="user-form__build">Строение/Дом</label>
-            <input type="email" name="email" placeholder="" required/>
-            <!--            <label class="i'm not robot">I'm not Robot</label>-->
-            <!--            <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
-          </form>
-
-        </div>
-        <button class="user-form-btn btn btn-medium" type="submit">Сохранить</button>
-        <form class="user-data__form user-form">
-          <h2 class="user-data__title title-form">Изменение пароля</h2>
-          <label class="user-form__pass">Новый пароль</label>
-          <input type="password" name="REGISTER[PASSWORD]" id="user-form-pass" placeholder="" minlength="6" size="30" required/>
-          <label class="user-form__pass">Подтвердите новый пароль</label>
-          <input type="password" name="REGISTER[CONFIRM_PASSWORD]" id="user-form-newpass" placeholder="" size="30" required/>
-          <button class="user-form-btn btn btn-medium" type="submit">Изменить</button>
-        </form>
-      </div>
+    <div class="registration__title-container">
+      <h1 class="registration__title title-s">РЕГИСТРАЦИЯ</h1>
     </div>
+    <form action="" class="registration-form user-form">
+      <div class="label-box">
+        <label>Фамилия</label>
+      </div>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+      </div>
+      <div class="label-box">
+        <label>Имя</label>
+      </div>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+      </div>
+      <div class="label-box">
+        <label>Телефон</label>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
+      </div>
+      <div class="label-box">
+        <label>Электронная почта</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="" required/>
+      </div>
+      <div class="label-box">
+        <label>Пароль</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="" required/>
+      </div>
+
+    </form>
+  </div>
   </div>
 </section>
 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+@@include('blocks/header.html')
+@@include('blocks/breadcrumb.html')
+<section class="registration section">
+  <div class="container">
+    <div class="registration__title-container">
+      <h1 class="registration__title title-s">РЕГИСТРАЦИЯ</h1>
+    </div>
+    <form action="" class="registration-form user-form">
+      <div class="label-box">
+        <label>Фамилия</label>
+      </div>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+      </div>
+      <div class="label-box">
+        <label>Имя</label>
+      </div>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+      </div>
+      <div class="label-box">
+        <label>Телефон</label>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
+      </div>
+      <div class="label-box">
+        <label>Электронная почта</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="" required/>
+      </div>
+      <div class="label-box">
+        <label>Пароль</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="" required/>
+      </div>
+
+    </form>
+  </div>
+  </div>
+</section>
+
+
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>
