@@ -167,7 +167,7 @@
 
         <form action="" class="header__search-form search-form">
           <button type="submit" class="search__form-btn"></button>
-          <input type="text" class="search-form-txt" placeholder="Поиск по каталогу">
+          <input type="search" class="search-form-txt" placeholder="Поиск по каталогу">
         </form>
       </div>
     </div>
@@ -204,39 +204,46 @@
     <div class="registration__title-container">
       <h1 class="registration__title title-s">РЕГИСТРАЦИЯ</h1>
     </div>
-    <form action="" class="registration-form user-form">
-      <div class="label-box">
-        <label>Фамилия</label>
-      </div>
-      <div class="input-box">
-        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
-      </div>
-      <div class="label-box">
-        <label>Имя</label>
-      </div>
-      <div class="input-box">
-        <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
-      </div>
-      <div class="label-box">
-        <label>Телефон</label>
-      </div>
-      <div class="input-box">
-        <input type="tel" name="reference" id="user-form-tel" placeholder="" axlength="12" required/>
-      </div>
-      <div class="label-box">
-        <label>Электронная почта</label>
-      </div>
-      <div class="input-box">
-        <input type="email" name="email" placeholder="" required/>
-      </div>
-      <div class="label-box">
-        <label>Пароль</label>
-      </div>
-      <div class="input-box">
-        <input type="email" name="email" placeholder="" required/>
-      </div>
-
-    </form>
+    <div class="registration__form-wrapper">
+      <form action="" class="registration-form form-container">
+        <div class="label-box">
+          <label for="user-s-name">Фамилия</label>
+        </div>
+        <div class="input-box">
+          <input id="user-s-name" type="text" name="user-s-name" placeholder="" minlength="3" axlength="20" required/>
+        </div>
+        <div class="label-box">
+          <label for="user-name">Имя</label>
+        </div>
+        <div class="input-box">
+          <input id="user-name" type="text" name="user-name" placeholder="" minlength="3" axlength="20" required/>
+        </div>
+        <div class="label-box">
+          <label for="user-tel">Телефон</label>
+        </div>
+        <div class="input-box">
+          <input id="user-tel" type="tel" name="tel" id="user-tel" placeholder="" axlength="12" required/>
+        </div>
+        <div class="label-box">
+          <label>Электронная почта</label>
+        </div>
+        <div class="input-box">
+          <input type="email" name="email" placeholder="" required/>
+        </div>
+        <div class="label-box">
+          <label for="user-password">Пароль</label>
+        </div>
+        <div class="input-box">
+          <input id="user-password" type="password" name="user-password" placeholder="" required/>
+        </div>
+        <div class="label-box">
+          <label for="user-password-confirm">Подтверждение пароля</label>
+        </div>
+        <div class="input-box">
+          <input id="user-password-confirm" type="password" name="user-password-confirm" placeholder="" required/>
+        </div>
+      </form>
+    </div>
   </div>
   </div>
 </section>

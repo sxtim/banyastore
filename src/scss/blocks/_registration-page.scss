@@ -1,0 +1,17 @@
+.registration__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registration__title {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.registration__form-wrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}

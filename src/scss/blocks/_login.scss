@@ -7,6 +7,7 @@
 .login-section__title {
   font-weight: 600;
   font-size: 32px;
+  text-transform: uppercase;
 }
 
 .login-section__subtitle {
@@ -15,7 +16,7 @@
 }
 
 
-.login-section__auth-form {
+.auth-form__wrapper {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -30,7 +31,7 @@
   }
 }
 
-.auth-form {
+.form-container {
   width: 100%;
   max-width: 400px;
 }
@@ -45,12 +46,17 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding: 5px 5px 5px 0;
+  padding: 5px 0;
   background: none;
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 20px;
   color: black;
+
+  input {
+    width: 100%;
+  }
+
 }
 
 .input-check-box input{
