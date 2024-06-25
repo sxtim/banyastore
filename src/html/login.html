@@ -20,16 +20,16 @@
     <div class="auth-form__wrapper">
       <form class="auth-form form-container" action="">
         <div class="label-box">
-          <label class="auth-form__login">Логин</label>
+          <label for="name" class="auth-form__login">Логин</label>
         </div>
         <div class="input-box">
-          <input type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+          <input id="name" type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
         </div>
         <div class="label-box">
-          <label class="auth-form__email">Пароль</label>
+          <label for="user-password" class="auth-form__email">Пароль</label>
         </div>
         <div class="input-box">
-          <input type="password" name="password" placeholder="" minlength="8" required/>
+          <input id="user-password" type="password" name="password" placeholder="" minlength="8" required/>
         </div>
         <!--        <div class="label-box">-->
         <!--          <label class="i'm not robot">I'm not Robot</label>-->
@@ -48,7 +48,7 @@
         <a class="auth-form__forgot" href="#!">Забыли свой пароль?</a>
         <div class="auth-form__reg-box">
           <p class="auth-form__reg-text">Если Вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</p>
-          <a href="#!" class="auth-form__reg-link btn btn-white">Зарегистрироваться</a>
+          <a href="./registration.html" class="auth-form__reg-link btn btn-white">Зарегистрироваться</a>
         </div>
       </form>
     </div>
