@@ -5,6 +5,7 @@
 import  './modules/sliders';
 import  './modules/product-detail-tabs';
 import  './modules/cart-discount-acc.js';
+import  './modules/masks.js';
 
 
 
