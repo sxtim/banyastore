@@ -47,12 +47,13 @@
  }
 
 .input-box {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
   background: none;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: black;
 
 
@@ -60,7 +61,7 @@
   input {
     border-bottom: 1px solid var(--gray);
     width: 100%;
-    padding: 10px 5px;
+    padding: 5px 5px 10px 5px;
     &:focus {
       box-shadow: 0 4px 2px -2px var(--gray);
     }
@@ -84,7 +85,8 @@
   font-size: 14px;
 }
 
-.auth-form__remember-checkbox {
+.auth-form__checkbox {
+  cursor: pointer;
   width: 0;
   height: 0;
   position: absolute;
@@ -96,33 +98,42 @@
   position: relative;
   display: inline-block;
   float: left;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 2px solid #c6c6c6;
   border-radius: 4px;
   vertical-align: sub;
   margin-right: 10px;
 
+  &:hover {
+    box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
+  }
+
   &::before {
     content: '';
     display: block;
-    height: 10px;
-    width: 21px;
-    border-left: 2px solid #8c8c8c;
-    border-bottom: 2px solid #8c8c8c;
+    height: 5px;
+    width: 10px;
+    border-left: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
     transform: rotate(-50deg) scale(0);
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
-    top: -6px;
+    top: -2px;
     margin: auto;
     transition: 0.5s;
   }
 }
 
+.real-checkbox:checked + .custom-checkbox {
+  box-shadow: 0 3px 5px #777777, inset 0 0 0px #777777;
+}
+
 .real-checkbox:checked + .custom-checkbox::before {
   transform: rotate(-410deg) scale(1);
+
 }
 
 .auth-form__button {

@@ -16,13 +16,13 @@ phoneInput.addEventListener("input", phoneInputHandler);
 btn.addEventListener("click", btnHandler);
 
 // Если ввели правлильно - кнопка активна
-// function phoneInputHandler() {
-//     if (phoneMask.masked.isComplete) {
-//         btn.classList.add("registration-form__btn-reg--active");
-//     } else {
-//         btn.classList.remove("registration-form__btn-reg--active");
-//     }
-// }
+function phoneInputHandler() {
+    if (phoneMask.masked.isComplete) {
+        btn.classList.add("reg-form__btn-reg--active");
+    } else {
+        btn.classList.remove("reg-form__btn-reg--active");
+    }
+}
 
 // Отправляем номер телефона
 async function btnHandler(e) {
@@ -32,3 +32,26 @@ async function btnHandler(e) {
         body: phoneMask.unmaskedValue,
     });
 }
+
+console.log("fasdfasdfasdf")
+
+
+// show/hide password checkbox
+var inpPass = document.getElementById('input-pass');
+var passShowToggle = document.getElementById('pass-show-toggle');
+
+
+
+function showHidePassword () {
+    if (inpPass.type === 'password') {
+        inpPass.setAttribute('type', 'text');
+        passShowToggle.classList.add('view');
+    } else {
+        passShowToggle.classList.remove('view');
+        inpPass.setAttribute('type', 'password');
+    }
+};
+
+passShowToggle.onclick = function () {
+    passShowToggle.classList.toggle('view');
+};
