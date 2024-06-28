@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.input-box__err {
+.input-box__msg {
   font-size: 12px;
   font-weight: 600;
   color: var(--red);
@@ -111,4 +111,12 @@
 .registration-form__log-link {
   margin-top: 20px;
   max-width: 200px;
+}
+
+.label-box small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
 }
