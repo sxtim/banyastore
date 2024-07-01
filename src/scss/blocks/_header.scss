@@ -7,10 +7,21 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    height: 70px;
+  }
+
+
 }
 
 .header__logo {
   max-width: 130px;
+
+  @media  (max-width: 768px) {
+    max-width: 110px;
+  }
+
   img {
 
     height: auto;
@@ -68,6 +79,11 @@
     &:hover {
       color: var(--white);
     }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
   }
 
 
@@ -75,7 +91,7 @@
 
 .header__phone {
   @media(max-width: 768px) {
-    display: none;
+    //display: none;
 
   }
 }
@@ -86,6 +102,11 @@
   align-items: flex-end;
   justify-content: flex-end;
   margin-bottom: 3px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
 }
 
 .header__shop-menu {
@@ -197,6 +218,11 @@
 
 .header__bottom {
   background-color: var(--black-dark);
+
+  @media  (max-width: 768px) {
+    display: none;
+  }
+
 }
 
 .header__bottom-inner {
