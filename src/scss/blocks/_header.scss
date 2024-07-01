@@ -80,14 +80,22 @@
   }
 }
 
+.header__shop-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+
 .header__shop-menu {
   display: flex;
   margin: 5px 0;
 }
 
 .shop-menu__item {
-  width: 66px;
-  height: 66px;
+  width: 55px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,6 +184,15 @@
 
 .shop-menu__cart-link {
   position: relative;
+}
+
+.shop-menu__user-info {
+  color: var(--mustard);
+}
+
+.shop-menu__user-exit {
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 
 .header__bottom {

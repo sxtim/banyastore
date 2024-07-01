@@ -1,12 +1,13 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+mobileNav();
 
 // import  './modules/slider-custom';
 import  './modules/sliders';
 import  './modules/product-detail-tabs';
 import  './modules/cart-discount-acc.js';
-import  './modules/validate.js';
-import  './modules/masks.js';
+// import  './modules/validate.js';
+// import  './modules/masks.js';
+import './modules/mobile-nav';
 
 
 
