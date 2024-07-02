@@ -116,7 +116,7 @@
 
 .shop-menu__item {
   width: 55px;
-  height: 45px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,12 +135,11 @@
   &:hover {
     transition: .1s;
     background-color: var(--green-dark);
+  }
 
-    @media (max-width: 998px) {
-      //background-color: transparent;
-      //box-shadow: none;
-    }
-
+  .active {
+    transition: .1s;
+    background-color: var(--green-dark);
   }
 
   svg {
@@ -163,8 +162,8 @@
   }
 
   @media (max-width: 998px) {
-    width: 45px;
-    height: 45px;
+    //width: 45px;
+    //height: 45px;
     background-color: transparent;
     box-shadow: none;
 
