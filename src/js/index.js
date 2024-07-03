@@ -8,6 +8,8 @@ import  './modules/cart-discount-acc.js';
 // import  './modules/validate.js';
 // import  './modules/masks.js';
 import './modules/mobile-nav';
+import './modules/filters';
+
 
 
 
