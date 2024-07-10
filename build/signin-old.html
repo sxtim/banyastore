@@ -307,20 +307,65 @@
 </ul>
 </div>
 
-<main class="main">
-  <section class="section">
-    <div class="container">
-      <div class="successful-order">
-        <div class="successful-order__wrapper">
-          <h1 class="successful-order__title title-s">Ваш заказ успешно оформлен!</h1>
-          <p class="successful-order__subtitle">После подтверждения, оплатить его можно в личном кабинете.</p>
-          <a href="./index.html" class="btn btn-medium btn-successful-order">Вернуться на главную</a>
-        </div>
-      </div>
+<section class="breadcrumb">
+<div class="container">
+  <nav class="breadcrumb__nav" aria-label="breadcrumb">
+    <ol class="breadcrumb__list">
+      <li ><a class="breadcrumb__item" href="#">Главная</a></li>
+      <li ><a class="breadcrumb__item" href="#">Каталог</a></li>
+      <li ><a class="breadcrumb__item" href="#">Печи</a></li>
+      <li ><a class="breadcrumb__item breadcrumb-active" href="#">Дымоходы</a></li>
+    </ol>
+  </nav>
+</div>
+</section>
 
+<section class="login-section section">
+  <div class="container">
+    <div class="login-section__title-container">
+      <h1 class="login-section__title title-s">Вход</h1>
+      <p class="login-section__subtitle">Пожалуйста, авторизуйтесь</p>
     </div>
-  </section>
-</main>
+    <div class="auth-form__wrapper">
+      <form class="auth-form form-container" action="">
+        <div class="label-box">
+          <label for="name" class="auth-form__login">Логин</label>
+        </div>
+        <div class="input-box">
+          <input id="name" type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+          <span class="input-box__msg">Пользователь не найден</span>
+        </div>
+        <div class="label-box">
+          <label for="user-password" class="auth-form__email">Пароль</label>
+        </div>
+        <div class="input-box">
+          <input id="user-password" type="password" name="password" placeholder="" minlength="8" required/>
+        </div>
+        <!--        <div class="label-box">-->
+        <!--          <label class="i'm not robot">I'm not Robot</label>-->
+        <!--        </div>-->
+        <!--        <div class="input-check-box">-->
+        <!--          <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
+        <!--        </div>-->
+        <div class="auth-form__remember">
+          <label>
+            <input class="auth-form__checkbox real-checkbox" type="checkbox">
+            <span class="custom-checkbox"></span>
+            Запомнить меня на этом компьютере
+          </label>
+        </div>
+        <button class="auth-form__button btn ">Войти</button>
+        <a class="auth-form__forgot" href="#!">Забыли свой пароль?</a>
+        <div class="auth-form__reg-box">
+          <p class="auth-form__reg-text">Если Вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</p>
+          <a href="signup-old.html" class="auth-form__reg-link btn btn-white">Зарегистрироваться</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">

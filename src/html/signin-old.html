@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BanyaStore</title>
+  <link rel="stylesheet" href="./css/main.css"/>
+  <link rel="stylesheet" href="./fonts/raleway/stylesheet.css"/>
+</head>
+<body>
+@@include('blocks/header.html')
+@@include('blocks/breadcrumb.html')
+<section class="login-section section">
+  <div class="container">
+    <div class="login-section__title-container">
+      <h1 class="login-section__title title-s">Вход</h1>
+      <p class="login-section__subtitle">Пожалуйста, авторизуйтесь</p>
+    </div>
+    <div class="auth-form__wrapper">
+      <form class="auth-form form-container" action="">
+        <div class="label-box">
+          <label for="name" class="auth-form__login">Логин</label>
+        </div>
+        <div class="input-box">
+          <input id="name" type="text" name="name" placeholder="" minlength="3" axlength="20" required/>
+          <span class="input-box__msg">Пользователь не найден</span>
+        </div>
+        <div class="label-box">
+          <label for="user-password" class="auth-form__email">Пароль</label>
+        </div>
+        <div class="input-box">
+          <input id="user-password" type="password" name="password" placeholder="" minlength="8" required/>
+        </div>
+        <!--        <div class="label-box">-->
+        <!--          <label class="i'm not robot">I'm not Robot</label>-->
+        <!--        </div>-->
+        <!--        <div class="input-check-box">-->
+        <!--          <input type="checkbox" name="I'm not Robot" id="I'm not Robot" required/>-->
+        <!--        </div>-->
+        <div class="auth-form__remember">
+          <label>
+            <input class="auth-form__checkbox real-checkbox" type="checkbox">
+            <span class="custom-checkbox"></span>
+            Запомнить меня на этом компьютере
+          </label>
+        </div>
+        <button class="auth-form__button btn ">Войти</button>
+        <a class="auth-form__forgot" href="#!">Забыли свой пароль?</a>
+        <div class="auth-form__reg-box">
+          <p class="auth-form__reg-text">Если Вы впервые на сайте, заполните, пожалуйста, регистрационную форму.</p>
+          <a href="signup-old.html" class="auth-form__reg-link btn btn-white">Зарегистрироваться</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+@@include('blocks/footer.html')
+<script src="./js/index.bundle.js"></script>
+</body>
+</html>

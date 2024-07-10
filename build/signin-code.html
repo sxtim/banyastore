@@ -307,20 +307,43 @@
 </ul>
 </div>
 
-<main class="main">
-  <section class="section">
-    <div class="container">
-      <div class="successful-order">
-        <div class="successful-order__wrapper">
-          <h1 class="successful-order__title title-s">Ваш заказ успешно оформлен!</h1>
-          <p class="successful-order__subtitle">После подтверждения, оплатить его можно в личном кабинете.</p>
-          <a href="./index.html" class="btn btn-medium btn-successful-order">Вернуться на главную</a>
-        </div>
-      </div>
+<section class="breadcrumb">
+<div class="container">
+  <nav class="breadcrumb__nav" aria-label="breadcrumb">
+    <ol class="breadcrumb__list">
+      <li ><a class="breadcrumb__item" href="#">Главная</a></li>
+      <li ><a class="breadcrumb__item" href="#">Каталог</a></li>
+      <li ><a class="breadcrumb__item" href="#">Печи</a></li>
+      <li ><a class="breadcrumb__item breadcrumb-active" href="#">Дымоходы</a></li>
+    </ol>
+  </nav>
+</div>
+</section>
 
+<section class="login-section section">
+  <div class="container">
+    <div class="login-section__title-container">
+      <h1 class="login-section__title title-s">Вход</h1>
+      <p class="login-section__subtitle">Пожалуйста, авторизуйтесь</p>
     </div>
-  </section>
-</main>
+    <div class="auth-form__wrapper">
+      <form class="auth-form form-container" action="">
+        <div class="label-box">
+          <label for="user-tel">Телефон</label>
+        </div>
+        <div class="input-box auth-form__phone">
+          <input class="form-phone " id="user-tel" type="tel" name="tel" id="user-tel" axlength="12" required/>
+          <span>Указывая номер телефона, вы принимаете условия</span>
+          <br>
+          <a href="#!">Пользовательского соглашения</a>
+        </div>
+        <button class="auth-form__button btn ">Войти</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer__wrapper">
