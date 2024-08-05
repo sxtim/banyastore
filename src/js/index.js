@@ -7,8 +7,17 @@ import  './modules/product-detail-tabs';
 import  './modules/cart-discount-acc.js';
 // import  './modules/validate.js';
 // import  './modules/masks.js';
-import './modules/mobile-nav';
+// import './modules/mobile-nav';
 import './modules/filters';
+
+
+const element = document.querySelector('.mobile-nav-btn')
+
+function handleClickFunction(event) {
+    alert('Именованная функция')
+}
+element.addEventListener('click', handleClickFunction)
+
 
 
 
